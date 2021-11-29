@@ -115,12 +115,22 @@ li {
   z-index: 1;
 }
 
-.content {
+.home__content__logo {
   width: 74%;
   height: 530px;
 }
 
-.ver {
+.home__logo__grande__config {
+  width: 89%;
+  margin-top: -3%;
+}
+
+.home__content__logo__chico {
+  width: 12%;
+  height: 530px;
+}
+
+.home__logo__chico__config {
   width: 89%;
   margin-top: -3%;
 }
@@ -340,6 +350,46 @@ textarea::placeholder {
   font-weight: bold;
   font-size: 2.5rem;
   color: #191D2D;
+  position: absolute;
+  z-index: 1;
+}
+
+.diferenciales__separator-ribbon {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+}
+
+.diferenciales__content__logo__chico {
+  width: 12%;
+  height: 530px;
+}
+
+.diferenciales__logo__chico__config {
+  width: 90%;
+  margin-top: 50px;
+}
+
+.diferenciales__separator-ribbon__puntos {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+}
+
+.diferenciales__content__puntos {
+  width: 14%;
+}
+
+.diferenciales__puntos {
+  width: 130%;
+  margin-top: 170px;
+}
+
+.prueba {
+  position: absolute;
+  z-index: 1;
 }
 
 .diferenciales__card {
@@ -393,6 +443,10 @@ textarea::placeholder {
 
   .diferenciales__titulo {
     font-size: 30px;
+  }
+
+  .diferenciales__titulo {
+    position: relative;
   }
 }
 /* Dispositivo LG */
@@ -656,8 +710,8 @@ textarea::placeholder {
 }
 
 .footer__redes {
-  width: 60%;
-  height: 60%;
+  width: 50%;
+  height: 50%;
 }
 
 body {

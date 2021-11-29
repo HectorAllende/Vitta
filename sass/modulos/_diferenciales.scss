@@ -18,6 +18,8 @@
     font-weight: bold;
     font-size: 2.5rem;
     color: $azul-oscuro;
+    position: absolute;
+    z-index: 1;
        
 }
 
@@ -53,8 +55,56 @@
 // }
 
 
+.diferenciales__separator-ribbon{
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    //agregar
+}
+
+.diferenciales__content__logo__chico{
+    width: 12%;
+    height: 530px; 
+}
+
+.diferenciales__logo__chico__config{
+    width: 90%; 
+    margin-top: 50px;
+}
+
+
+
+
+.diferenciales__separator-ribbon__puntos{
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1; 
+}
+
+.diferenciales__content__puntos{
+    width: 14%;
+}
+
+.diferenciales__puntos{
+    width: 130%; 
+    margin-top: 170px;
+}
+
+
+//
+
+.prueba{
+    position: absolute;
+    z-index: 1;
+}
+
+
+
 .diferenciales__card{
     margin-top: 40px;
+  
     
 }
 
@@ -115,6 +165,13 @@
     }
     .diferenciales__titulo{
         font-size: 30px;
+    }
+
+    .diferenciales__titulo{
+
+        position: relative;
+
+           
     }
  
 }
