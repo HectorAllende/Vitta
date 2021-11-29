@@ -379,21 +379,41 @@ textarea::placeholder {
 }
 
 .diferenciales__content__puntos {
-  width: 14%;
+  width: 20%;
 }
 
 .diferenciales__puntos {
-  width: 130%;
-  margin-top: 170px;
+  width: 120%;
+  margin-top: 200px;
+  margin-left: 15px;
 }
 
-.prueba {
+.diferenciales__separator-ribbon__circulo {
+  width: 100%;
+  overflow: hidden;
   position: absolute;
   z-index: 1;
 }
 
+.diferenciales__content__circulo {
+  width: 90%;
+}
+
+.diferenciales__circulo {
+  width: 8%;
+  margin-top: 130px;
+  margin-left: 700px;
+}
+
 .diferenciales__card {
+  margin-left: 70px;
+  position: absolute;
+  z-index: 2;
   margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 .diferenciales__card__box {
@@ -406,10 +426,6 @@ textarea::placeholder {
   transition: transform 0.3s ease;
   width: 12rem;
   height: 12rem;
-  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12) ease, 0.3s box-shadow;
-}
-.diferenciales__card__box:hover {
-  transform: scale(1.1);
 }
 
 .diferenciales__card__imagen {
@@ -451,6 +467,18 @@ textarea::placeholder {
 }
 /* Dispositivo LG */
 /* Dispositivo XL */
+@media screen and (max-width: 1200px) {
+  .diferenciales__card {
+    margin-left: 0px;
+    position: relative;
+    z-index: 1;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+}
 .ubicacion {
   background-color: #181E2E;
 }
