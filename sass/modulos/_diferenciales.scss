@@ -88,20 +88,12 @@
     transition: transform .3s ease;
     width: 12rem;
     height: 12rem;  
-
-    // transition: .3s transform cubic-bezier(.155,1.105,.295,1.12) ease,.3s box-shadow;
-    
-    // &:hover{
-    //     transform: scale(1.1);
-    // }
 }
 
 .diferenciales__card__imagen{
     height: 55%;
     width: 55%;
-
 }
-
 
 .diferenciales__btn{
     background-color: $amarillo;
