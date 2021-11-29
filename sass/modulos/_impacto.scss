@@ -1,0 +1,62 @@
+.impacto__contenido{
+    margin-top: 3.5rem;
+}
+
+.impacto__titulo{
+    display: inline-block;
+    position: relative;
+    color: $azul;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 85px;
+    z-index: 1;
+    
+}
+
+.impacto__separator{
+    text-align: start;
+    padding-left: -1.25rem;
+    margin-left: -1.25rem;
+    position: absolute;
+    &::after{
+        position: absolute;
+        content: '';
+        height: 1.25rem;
+        width: 19rem;
+        background-color: $amarillo;
+        top: 7em;       
+    }
+}
+
+.impacto__titulo_principal{
+    color:$azul;
+    font-weight: bold ;
+    line-height: 122%;
+    font-size: 45px;
+}
+
+.impacto__titulo_secundario{
+    color: $blanco;
+
+    line-height: 122%;
+    font-size: 30px;
+}
+
+.impacto__parrafo{
+    margin-top: 1rem;
+    color: $blanco;
+    line-height: 122%; 
+    text-align: justify;
+    color: $gris;
+    font-weight: $font-weight-light;
+    font-size: 17px;   
+}
+.impacto__textos{
+    margin-top: 3rem;
+}
+
+.imagen__impacto{
+    width: 100%;
+    height: 100%;
+    margin-top: 3rem;
+}

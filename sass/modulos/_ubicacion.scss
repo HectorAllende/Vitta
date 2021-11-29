@@ -1,0 +1,124 @@
+.ubicacion{
+    background-color: $azul;
+}
+
+.ubicacion__titulo{
+    display: inline-block;
+    position: relative;
+    color: $blanco;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 85px;
+    z-index: 1;
+    
+}
+
+.separator{
+    text-align: start;
+    padding-left: -1.25rem;
+    margin-left: -1.25rem;
+    position: absolute;
+    &::after{
+        position: absolute;
+        content: '';
+        height: 1.25rem;
+        width: 13rem;
+        background-color: $amarillo;
+        top:-1.5em;       
+    }
+}
+
+
+
+.ubicacion__titulo_principal{
+    color:$amarillo;
+    font-weight: bold ;
+    line-height: 122%;;
+    font-size: 45px;
+}
+
+.ubicacion__titulo_secundario{
+    color: $blanco;
+
+    line-height: 122%;
+    font-size: 30px;
+}
+
+.ubicacion__parrafo{
+    margin-top: 1.5rem;
+    color: $blanco;
+    line-height: 122%; 
+    text-align: justify;
+
+    color: $blanco;
+    font-weight: $font-weight-light;
+    font-size: 16px;
+  
+  
+    
+}
+
+.ubicacion__contenido{
+    margin-top: 3.5rem;
+}
+
+.ubicacion__icono{
+    margin-top: 5rem;
+    margin-left: 5rem;
+
+}
+
+
+
+.ubicacion__mapa{
+    border: 5px solid $amarillo;
+    border-top: 0px;
+    border-left: 0px;
+    border-radius: 20px;
+
+
+}
+.ubicacion__card{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+/* Dispositivo sm */
+@media screen and (max-width: 492px) {
+    .ubicacion__titulo{
+        font-size: 25px;
+  
+    }
+ 
+}
+
+/* Dispositivo MD */
+@media screen and (max-width: 768px) {
+
+
+    .separator{
+
+        &::after{
+       
+            width: 10rem;
+            
+        }
+    }
+
+}
+
+/* Dispositivo LG */
+@media screen and (max-width: 992px) {
+
+}
+
+/* Dispositivo XL */
+@media screen and (max-width: 1200px) {
+
+}

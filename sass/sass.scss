@@ -1,0 +1,23 @@
+@import './modulos/variables';
+@import './modulos/header';
+@import './modulos//home';
+@import './modulos/somos';
+@import './modulos/diferenciales';
+@import './modulos/ubicacion';
+@import './modulos/servicios';
+@import './modulos/impacto';
+@import './modulos/nosotros';
+@import './modulos/footer';
+
+body{
+    font-family: 'Poppins', sans-serif;         
+}
+
+a{
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    position: relative; //hace falta para efectos
+    margin-top: 1em;
+    &:first-of-type{margin-top: 0;}// quita el margen de arriba primer elemento
+}

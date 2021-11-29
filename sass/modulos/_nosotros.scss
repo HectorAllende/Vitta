@@ -1,0 +1,27 @@
+.nosotros{
+    background-color: $fondo-nosotros;
+}
+.nosotros__contenido{
+    margin-top: 5rem;
+}
+
+.nosotros__titulo{
+    font-weight: bold;
+    font-size: 16px;
+    color: $titulo-gris;
+    margin-bottom: 1rem;
+}
+
+.nosotros__texto{
+    color: $negro;
+    line-height: 124%; 
+    text-align: justify;
+
+    font-weight: $font-weight-light;
+    font-size: 16px;
+}
+
+.nosotros__marca{
+    color: $amarillo;
+    font-weight: bold;
+}

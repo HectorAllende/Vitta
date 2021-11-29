@@ -1,0 +1,70 @@
+
+.somos__separador{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+    margin-top: -15px;
+}
+
+.somos__separador__contenido{
+    width: 150%;
+    height: 60px;
+    margin-left: -25%;
+    background-color: $azul;
+}
+
+.somos__link{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+    margin-top: -100px;
+}
+
+.somos__img{
+    max-height: 100vh;
+    
+} 
+.somos_imagen_fondo{
+    max-height: 100vh;
+}
+
+
+.somos__boton__slider{
+    transition: transform .3s ease;
+ 
+}
+
+.somos__boton__slider:hover{
+
+    transform: scale(1.02);
+}
+
+.somos__boton{
+    border: none;
+    height: 100%;
+    background-color: transparent;
+}
+
+
+/* Dispositivo MD */
+@media screen and (max-width: 768px) {
+    .somos__separador__contenido{
+        height: 30px;
+    } 
+ 
+}
+
+/* Dispositivo LG */
+@media screen and (max-width: 992px) {
+
+}
+
+/* Dispositivo XL */
+@media screen and (max-width: 1200px) {
+
+}
+
+
+

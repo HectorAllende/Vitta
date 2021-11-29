@@ -1,0 +1,130 @@
+
+.diferenciales__header{
+    margin-top: 80px
+}
+
+// .diferenciales__imagen{
+//     background-image: url(../../imagenes/diferenciales/logo.png);
+//     height: 400px;
+//     margin-top: -700px;
+//     background-size: 20%;
+//     background-repeat: no-repeat;
+//     background-position: top top;
+
+    
+// }
+
+.diferenciales__titulo{
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: $azul-oscuro;
+       
+}
+
+// .diferenciales__puntos{
+//     background-image: url(../../imagenes/diferenciales/puntos.png);
+//     height: 100vh;  
+//     height: 80px;
+//     margin-top: -80px;
+//     background-size: 20%;
+//     background-repeat: no-repeat;
+//     background-position: left bottom;
+// }
+
+// .diferenciales__circulo{
+//     background-image: url(../../imagenes/diferenciales/circulo.png);
+//     height: 800px;
+//     margin-top: -800px;
+//     margin-left: 17%;
+//     background-size: 16%;
+//     background-repeat: no-repeat;
+//     background-position: center center;
+// }
+
+// .diferenciales__logo__grande{
+//     background-image: url(../../imagenes/diferenciales/logo\ grande.png);
+//     // height: 100vh;  
+//     height: 600px;
+//     margin-top: -200px;
+//     margin-left: 40%;
+//     background-size: 30%;
+//     background-repeat: no-repeat;
+//     background-position: right bottom;
+// }
+
+
+.diferenciales__card{
+    margin-top: 40px;
+    
+}
+
+.diferenciales__card__box{
+    border: 1px solid $contorno;
+    border-radius: 43px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    transition: transform .3s ease;
+    width: 12rem;
+    height: 12rem;  
+
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12) ease,.3s box-shadow;
+    
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+.diferenciales__card__imagen{
+    height: 55%;
+    width: 55%;
+
+}
+
+
+.diferenciales__btn{
+    background-color: $amarillo;
+    border: none;
+    border-radius: 20px;
+    color:$blanco ;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 5px 15px 5px 15px;
+ 
+    text-align: center;
+    margin-top: 20px;
+  
+}
+
+
+/* Dispositivo sm */
+@media screen and (max-width: 492px) {
+    .diferenciales__titulo{
+        font-size: 25px;
+    }
+ 
+}
+
+
+/* Dispositivo MD */
+@media screen and (max-width: 768px) {
+    .diferenciales{
+        margin-top: 50px;
+    }
+    .diferenciales__titulo{
+        font-size: 30px;
+    }
+ 
+}
+
+/* Dispositivo LG */
+@media screen and (max-width: 992px) {
+
+}
+
+/* Dispositivo XL */
+@media screen and (max-width: 1200px) {
+
+}

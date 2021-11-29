@@ -1,0 +1,29 @@
+
+
+//colores
+
+$amarillo: rgba(211, 217, 46);
+$contorno: rgba(234, 234, 234);
+$gris: rgba( 117, 117, 117);
+$fondo-claro: rgba(229, 229, 229);
+$fondo-nosotros: rgba(250, 250, 250);
+$titulo-gris: rgba(157, 157, 157);
+$negro : rgba(0, 0, 0);
+$azul: #181E2E;
+$azul-oscuro: #191D2D;
+$blanco: #FFFFFF;
+$input-hover: #B0B3B8;
+$input-linea: #DBDBDB;
+$input-texto: #8E8E8E;
+
+$line-height-lg: 2;
+$font-weight-lighter:         lighter;
+$font-weight-light:           300;
+$font-weight-normal:          400;
+$font-weight-bold:            700;
+$font-weight-bolder:          bolder;
+
+$font-size-root:              null;
+$font-size-base:              1rem; // Assumes the browser default, typically `16px`
+$font-size-sm:                $font-size-base * .875;
+$font-size-lg:                $font-size-base * 1.25;
