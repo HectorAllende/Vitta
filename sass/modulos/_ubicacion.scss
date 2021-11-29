@@ -87,7 +87,57 @@
 
 
 
+/////
 
+.ubicacion__separator-ribbon__puntos{
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1; 
+}
+
+.ubicacion__content__puntos{
+    width: 90%;
+}
+
+.ubicacion__puntos{
+    width: 30%; 
+    margin-top: -680px;
+    margin-left: 800px;
+}
+
+
+//
+
+.ubicacion__separator-ribbon__puntos{
+ 
+    position: absolute;
+    z-index: 1; 
+}
+
+.ubicacion__content__circulo{
+    width: 80%;
+}
+
+.ubicacion__circulo{
+    width: 15%; 
+    margin-top: -110px;
+    margin-left: 630px;
+}
+
+// Persona
+
+.ubicacion__content__persona{
+    width: 80%;
+}
+
+.ubicacion__persona{
+
+    width: 20%; 
+    margin-top: -300px;
+    margin-left: 1130px;
+ 
+}
 
 /* Dispositivo sm */
 @media screen and (max-width: 492px) {
@@ -119,6 +169,17 @@
 }
 
 /* Dispositivo XL */
-@media screen and (max-width: 1200px) {
-
+@media screen and (max-width: 1350px) {
+    .ubicacion__display{
+        display: none;
+    }
 }
+
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1350px) {
+    .ubicacion__display{
+       
+    }
+
+ }

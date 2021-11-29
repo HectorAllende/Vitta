@@ -2,7 +2,6 @@
     background-color: $azul;
 }
 
-
 .servicio__titulo{
     display: inline-block;
     position: relative;
@@ -33,6 +32,7 @@
 .servicios__texto__card{
     color: $blanco;
     font-weight: lighter;
+    font-size: 14px;
 }
 
 .servicios__imagen{
@@ -53,10 +53,39 @@
 
 }
 
+.servicios__separator-ribbon{
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1; 
+}
+
+.servicios__content__puntos{
+    width: 20%;
+}
+
+.servicios__puntos{
+    width: 120%; 
+    margin-top: 500px;
+    margin-left: -190px;
+}
+
+// .servicios__content__circulo{
+//     width: 40%;
+// }
+
+// .servicios__circulo{
+//     position: absolute;
+//     width: 20%; 
+//     margin-top: -74px;
+//     margin-left: 800px;
+// }
 
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 576px) {
-
+    .servicio__svg{
+        margin-right: 40px;
+    }
 
 
  }
@@ -67,6 +96,9 @@
         margin-left: 100px;
        
      
+     }
+     .servicios__texto__card{
+         font-size: 12px;
      }
 
 }

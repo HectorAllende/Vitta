@@ -554,6 +554,48 @@ textarea::placeholder {
   justify-content: center;
 }
 
+.ubicacion__separator-ribbon__puntos {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+}
+
+.ubicacion__content__puntos {
+  width: 90%;
+}
+
+.ubicacion__puntos {
+  width: 30%;
+  margin-top: -680px;
+  margin-left: 800px;
+}
+
+.ubicacion__separator-ribbon__puntos {
+  position: absolute;
+  z-index: 1;
+}
+
+.ubicacion__content__circulo {
+  width: 80%;
+}
+
+.ubicacion__circulo {
+  width: 15%;
+  margin-top: -110px;
+  margin-left: 630px;
+}
+
+.ubicacion__content__persona {
+  width: 80%;
+}
+
+.ubicacion__persona {
+  width: 20%;
+  margin-top: -300px;
+  margin-left: 1130px;
+}
+
 /* Dispositivo sm */
 @media screen and (max-width: 492px) {
   .ubicacion__titulo {
@@ -568,6 +610,11 @@ textarea::placeholder {
 }
 /* Dispositivo LG */
 /* Dispositivo XL */
+@media screen and (max-width: 1350px) {
+  .ubicacion__display {
+    display: none;
+  }
+}
 .servicios {
   background-color: #181E2E;
 }
@@ -599,6 +646,7 @@ textarea::placeholder {
 .servicios__texto__card {
   color: #FFFFFF;
   font-weight: lighter;
+  font-size: 14px;
 }
 
 .servicios__imagen {
@@ -617,9 +665,35 @@ textarea::placeholder {
   margin-top: 15px;
 }
 
+.servicios__separator-ribbon {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+}
+
+.servicios__content__puntos {
+  width: 20%;
+}
+
+.servicios__puntos {
+  width: 120%;
+  margin-top: 500px;
+  margin-left: -190px;
+}
+
+@media (max-width: 576px) {
+  .servicio__svg {
+    margin-right: 40px;
+  }
+}
 @media (max-width: 768px) {
   .servicio__svg {
     margin-left: 100px;
+  }
+
+  .servicios__texto__card {
+    font-size: 12px;
   }
 }
 .impacto__contenido {
@@ -684,6 +758,42 @@ textarea::placeholder {
   margin-top: 3rem;
 }
 
+.impacto__separator-ribbon {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+}
+
+.impacto__content__puntos {
+  width: 20%;
+}
+
+.impacto__puntos {
+  width: 120%;
+  margin-top: 400px;
+  margin-left: 700px;
+}
+
+.impacto__content__circulo {
+  width: 7%;
+}
+
+.impacto__circulo {
+  width: 120%;
+  margin-top: 400px;
+  margin-left: -30px;
+}
+
+@media (max-width: 767.98px) {
+  .imagen__impacto {
+    width: 50%;
+    height: 50%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+}
 .nosotros {
   background-color: #fafafa;
 }
