@@ -53,9 +53,7 @@
     color: $blanco;
     font-weight: $font-weight-light;
     font-size: 16px;
-  
-  
-    
+      
 }
 
 .ubicacion__contenido{
@@ -109,6 +107,8 @@
 
 //
 
+
+
 .ubicacion__separator-ribbon__puntos{
  
     position: absolute;
@@ -125,6 +125,18 @@
     margin-left: 630px;
 }
 
+
+.ubicacion__content__logo{
+    width: 50%;
+}
+
+.ubicacion__logo{
+    width: 8%; 
+    margin-top: -720px;
+    margin-left: -30px;
+}
+
+
 // Persona
 
 .ubicacion__content__persona{
@@ -132,7 +144,6 @@
 }
 
 .ubicacion__persona{
-
     width: 20%; 
     margin-top: -300px;
     margin-left: 1130px;
@@ -178,8 +189,6 @@
 
 // XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1350px) {
-    .ubicacion__display{
-       
-    }
+   
 
  }

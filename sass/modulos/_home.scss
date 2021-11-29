@@ -59,7 +59,8 @@
 
 
 .home__contenido__principal{
-  margin-left: 8rem;
+  margin-left: 7rem;
+
   margin-top: 20px;
   position: relative;
   z-index: 100
@@ -191,10 +192,13 @@ textarea::placeholder{
 @media (max-width: 576px) {
 
     .home__contenido__principal{
-        margin-left: 5rem;
+        margin-left: 4rem;
         margin-top: 20px;
       
     }
+     .home__titulo__principal{
+        font-size: 20px;
+     }
  }
 
 /* Dispositivo MD */

@@ -145,7 +145,7 @@ li {
 }
 
 .home__contenido__principal {
-  margin-left: 8rem;
+  margin-left: 7rem;
   margin-top: 20px;
   position: relative;
   z-index: 100;
@@ -268,8 +268,12 @@ textarea::placeholder {
 /* --- MEDIAQUERIES ---  */
 @media (max-width: 576px) {
   .home__contenido__principal {
-    margin-left: 5rem;
+    margin-left: 4rem;
     margin-top: 20px;
+  }
+
+  .home__titulo__principal {
+    font-size: 20px;
   }
 }
 /* Dispositivo MD */
@@ -586,6 +590,16 @@ textarea::placeholder {
   margin-left: 630px;
 }
 
+.ubicacion__content__logo {
+  width: 50%;
+}
+
+.ubicacion__logo {
+  width: 8%;
+  margin-top: -720px;
+  margin-left: -30px;
+}
+
 .ubicacion__content__persona {
   width: 80%;
 }
@@ -682,11 +696,6 @@ textarea::placeholder {
   margin-left: -190px;
 }
 
-@media (max-width: 576px) {
-  .servicio__svg {
-    margin-right: 40px;
-  }
-}
 @media (max-width: 768px) {
   .servicio__svg {
     margin-left: 100px;

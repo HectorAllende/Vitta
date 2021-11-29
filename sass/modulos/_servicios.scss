@@ -70,21 +70,11 @@
     margin-left: -190px;
 }
 
-// .servicios__content__circulo{
-//     width: 40%;
-// }
-
-// .servicios__circulo{
-//     position: absolute;
-//     width: 20%; 
-//     margin-top: -74px;
-//     margin-left: 800px;
-// }
-
 // Small devices (landscape phones, 576px and up)
-@media (max-width: 576px) {
+@media (min-width: 576px) {
     .servicio__svg{
-        margin-right: 40px;
+
+
     }
 
 
