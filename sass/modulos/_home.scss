@@ -34,7 +34,7 @@
 //
 
 .home__content__logo__chico{
-    width: 12%;
+    width: 11%;
     height: 530px; 
 }
 
@@ -46,19 +46,15 @@
 
 //////
 
-.home__titulo__principal{
+
+
+.home__titulo__principal_1{
     font-weight: bold;
     color: $amarillo;
     font-size: 50px;
     line-height: 122%;
     position: relative;
-    z-index: 100
-
-    //agregar esto
 }
-
-
-
 
 .home__contenido__principal{
   margin-left: 7rem;
@@ -189,6 +185,7 @@ textarea::placeholder{
 /* --- MEDIAQUERIES ---  */
 // Small devices (landscape phones, 576px and up)
 
+
 @media (max-width: 576px) {
     .home__checkbox{
         margin-right: -4px;
@@ -197,7 +194,10 @@ textarea::placeholder{
     .ver{
         display: flex;
         align-items: center;
-    }  
+    } 
+    .home__titulo__principal_1{
+        font-size: 25px;
+     } 
  }
 
 @media (max-width: 576px) {
@@ -207,9 +207,7 @@ textarea::placeholder{
         margin-top: 20px;
       
     }
-     .home__titulo__principal{
-        font-size: 20px;
-     }
+
      .home__btn_cel{      
          padding: 5px 10px 5px 10px;
      }
@@ -217,24 +215,18 @@ textarea::placeholder{
 
 /* Dispositivo MD */
 @media screen and (max-width: 768px) {
-    .home__titulo__principal{
-        font-size: 38px;
+    .home__titulo__principal_1{
+        font-size: 35px;
     }
 
     .home__separador__contenido{
-
         height: 10px;    
     } 
 }
 
-/* Dispositivo LG */
-@media screen and (max-width: 992px) {
- 
-}
-
 /* Dispositivo XL */
 @media screen and (max-width: 1200px) {
-    .home__titulo__principal{
+    .home__titulo__principal_1{
         font-size: 40px;
     }
 }
