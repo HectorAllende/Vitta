@@ -71,9 +71,9 @@
 }
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
-    .servicio__svg{
-
+@media (max-width: 576px) {
+    svg.servicio__svg{
+        margin: 0px 0px 0px 60px;
 
     }
 

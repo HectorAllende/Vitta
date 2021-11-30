@@ -39,7 +39,6 @@
 
 .ubicacion__titulo_secundario{
     color: $blanco;
-
     line-height: 122%;
     font-size: 30px;
 }
@@ -146,16 +145,39 @@
 .ubicacion__persona{
     width: 20%; 
     margin-top: -300px;
-    margin-left: 1130px;
+    margin-left: 1144px;
  
 }
 
 /* Dispositivo sm */
 @media screen and (max-width: 492px) {
     .ubicacion__titulo{
-        font-size: 25px;
-  
+        font-size: 25px;  
     }
+    .ubicacion__titulo_principal{
+
+        font-size: 25px;
+    }
+    
+    .ubicacion__titulo_secundario{
+
+        font-size: 20px;
+    }
+
+    .separator{
+    text-align: start;
+    padding-left: -1.25rem;
+    margin-left: -3rem;
+    position: absolute;
+    &::after{
+        position: absolute;
+        content: '';
+        height: 1rem;
+        width: 1rem;
+        background-color: $amarillo;
+        top:-1.5em;       
+    }
+}
  
 }
 
@@ -164,10 +186,9 @@
 
 
     .separator{
-
+        margin-left: -1rem;
         &::after{
-       
-            width: 10rem;
+            width: 12rem;
             
         }
     }

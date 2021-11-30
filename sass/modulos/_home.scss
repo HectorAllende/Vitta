@@ -1,6 +1,8 @@
 //Home 
 .home{
+    top:4em;
   padding-top: 20px;  
+  top:20px;
   padding-bottom: 60px;
 }
 
@@ -140,13 +142,11 @@
     font-weight: lighter;
     font-size: $font-size-sm;
     color: $input-texto;
-
 }
 
 .home__checkbox{
     transform: scale(1.5);
-    padding: 10px;
-    
+    padding: 10px;    
 }
 
 input::placeholder,
@@ -184,11 +184,22 @@ textarea::placeholder{
     height: 16px;
     margin-left: -25%;
     background-color: $amarillo;    
-
 }
 
 /* --- MEDIAQUERIES ---  */
 // Small devices (landscape phones, 576px and up)
+
+@media (max-width: 576px) {
+    .home__checkbox{
+        margin-right: -4px;
+        text-align: center;        
+    }
+    .ver{
+        display: flex;
+        align-items: center;
+    }  
+ }
+
 @media (max-width: 576px) {
 
     .home__contenido__principal{
@@ -198,6 +209,9 @@ textarea::placeholder{
     }
      .home__titulo__principal{
         font-size: 20px;
+     }
+     .home__btn_cel{      
+         padding: 5px 10px 5px 10px;
      }
  }
 
@@ -210,18 +224,12 @@ textarea::placeholder{
     .home__separador__contenido{
 
         height: 10px;    
-    }
-
-
-  
+    } 
 }
 
 /* Dispositivo LG */
 @media screen and (max-width: 992px) {
  
-
-
-
 }
 
 /* Dispositivo XL */
@@ -229,9 +237,6 @@ textarea::placeholder{
     .home__titulo__principal{
         font-size: 40px;
     }
-
-
-
 }
 
 
