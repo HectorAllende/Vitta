@@ -38,13 +38,14 @@
 
 .somos__boton__slider:hover{
 
-    transform: scale(1.02);
+    transform: scale(1.01);
 }
 
 .somos__boton{
     border: none;
     height: 100%;
     background-color: transparent;
+    cursor: pointer;
 }
 
 

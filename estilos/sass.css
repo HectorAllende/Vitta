@@ -110,6 +110,13 @@ li {
   background-color: #191D2D;
 }
 
+.home__fondo1 {
+  background-image: url(../../imagenes/home/img-principal.png);
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
 .separator-ribbon {
   width: 100%;
   overflow: hidden;
@@ -350,13 +357,14 @@ textarea::placeholder {
 }
 
 .somos__boton__slider:hover {
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 
 .somos__boton {
   border: none;
   height: 100%;
   background-color: transparent;
+  cursor: pointer;
 }
 
 /* Dispositivo MD */
@@ -367,6 +375,18 @@ textarea::placeholder {
 }
 /* Dispositivo LG */
 /* Dispositivo XL */
+section.diferencialesVitta {
+  min-height: 100vh;
+}
+
+section.diferencialesVittaRio {
+  min-height: 100vh;
+}
+
+section.diferencialesVittaUrbano {
+  min-height: 100vh;
+}
+
 .diferenciales__header {
   margin-top: 80px;
 }

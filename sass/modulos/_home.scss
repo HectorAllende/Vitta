@@ -10,6 +10,14 @@
     background-color: $azul-oscuro;    
 }
 
+.home__fondo1{
+    background-image: url(../../imagenes/home/img-principal.png);
+    background-size:cover; 
+    background-position: left;
+    background-repeat: no-repeat;
+    
+}   
+
 
 .separator-ribbon{
     width: 100%;
