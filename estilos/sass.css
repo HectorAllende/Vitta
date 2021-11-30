@@ -140,7 +140,7 @@ li {
 .home__titulo__principal_1 {
   font-weight: bold;
   color: #d3d92e;
-  font-size: 50px;
+  font-size: 3.4rem;
   line-height: 122%;
   position: relative;
 }
@@ -267,19 +267,14 @@ textarea::placeholder {
 }
 
 /* --- MEDIAQUERIES ---  */
-@media (max-width: 576px) {
+@media screen and (max-width: 492px) {
   .home__checkbox {
     margin-right: -4px;
     text-align: center;
   }
 
-  .ver {
-    display: flex;
-    align-items: center;
-  }
-
-  .home__titulo__principal_1 {
-    font-size: 25px;
+  h1.home__titulo__principal_1 {
+    font-size: 30px;
   }
 }
 @media (max-width: 576px) {
@@ -301,11 +296,15 @@ textarea::placeholder {
   .home__separador__contenido {
     height: 10px;
   }
+
+  .home__titulo__principal_1 {
+    font-size: 2rem;
+  }
 }
 /* Dispositivo XL */
 @media screen and (max-width: 1200px) {
   .home__titulo__principal_1 {
-    font-size: 40px;
+    font-size: 3rem;
   }
 }
 .somos__separador {
@@ -470,10 +469,14 @@ textarea::placeholder {
     font-size: 25px;
   }
 
+  .diferenciales__card__imagen {
+    padding: 10px;
+  }
+
   .diferenciales__card__box {
     width: 9rem;
     height: 9rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
   }
 }
 /* Dispositivo MD */
@@ -518,13 +521,13 @@ textarea::placeholder {
   z-index: 1;
 }
 
-.separator {
+.ubicacion__separator {
   text-align: start;
   padding-left: -1.25rem;
   margin-left: -1.25rem;
   position: absolute;
 }
-.separator::after {
+.ubicacion__separator::after {
   position: absolute;
   content: "";
   height: 1.25rem;
@@ -537,7 +540,7 @@ textarea::placeholder {
   color: #d3d92e;
   font-weight: bold;
   line-height: 122%;
-  font-size: 45px;
+  font-size: 40px;
 }
 
 .ubicacion__titulo_secundario {
@@ -645,18 +648,24 @@ textarea::placeholder {
     font-size: 20px;
   }
 
-  .separator {
+  .ubicacion__separator {
     text-align: start;
     padding-left: -1.25rem;
+    margin-left: -1.25rem;
     position: absolute;
   }
-  .separator::after {
+  .ubicacion__separator::after {
     position: absolute;
     content: "";
     height: 0.7rem;
-    width: 1rem;
+    width: 8rem;
     background-color: #d3d92e;
-    top: -1.2rem;
+    top: -1.5em;
+  }
+
+  .ubicacion__mapa {
+    height: 300px;
+    width: 300px;
   }
 }
 /* Dispositivo MD */
@@ -746,6 +755,10 @@ textarea::placeholder {
   svg.servicio__svg {
     margin: 0px 0px 0px 60px;
   }
+
+  .servicios__card {
+    margin-bottom: 1rem;
+  }
 }
 @media (max-width: 768px) {
   .servicio__svg {
@@ -764,7 +777,7 @@ textarea::placeholder {
   display: inline-block;
   position: relative;
   color: #181E2E;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: bold;
   margin-top: 85px;
   z-index: 1;
@@ -845,6 +858,21 @@ textarea::placeholder {
   margin-left: -30px;
 }
 
+/* Dispositivo sm */
+@media screen and (max-width: 492px) {
+  .impacto__titulo {
+    font-size: 1.6rem;
+  }
+
+  .impacto__separator {
+    margin-left: -1rem;
+  }
+  .impacto__separator::after {
+    height: 1rem;
+    width: 12rem;
+    top: 6.3em;
+  }
+}
 @media (max-width: 767.98px) {
   .imagen__impacto {
     width: 75%;
@@ -854,6 +882,8 @@ textarea::placeholder {
     justify-content: center;
   }
 }
+/* Dispositivo LG */
+/* Dispositivo XL */
 .nosotros {
   background-color: #fafafa;
 }

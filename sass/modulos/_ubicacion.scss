@@ -13,7 +13,7 @@
     
 }
 
-.separator{
+.ubicacion__separator{
     text-align: start;
     padding-left: -1.25rem;
     margin-left: -1.25rem;
@@ -29,12 +29,11 @@
 }
 
 
-
 .ubicacion__titulo_principal{
     color:$amarillo;
     font-weight: bold ;
     line-height: 122%;;
-    font-size: 45px;
+    font-size: 40px;
 }
 
 .ubicacion__titulo_secundario{
@@ -164,20 +163,30 @@
         font-size: 20px;
     }
 
-    .separator{
-    text-align: start;
-    padding-left: -1.25rem;
- ;
-    position: absolute;
-    &::after{
+    .ubicacion__separator{
+        text-align: start;
+        padding-left: -1.25rem;
+        margin-left: -1.25rem;
         position: absolute;
-        content: '';
-        height: 0.7rem;
-        width: 1rem;
-        background-color: $amarillo;
-        top:-1.2rem;       
+        &::after{
+            position: absolute;
+            content: '';
+            height: 0.7rem;
+            width: 8rem;
+            background-color: $amarillo;
+            top:-1.5em;       
+        }
     }
-}
+
+    .ubicacion__mapa{
+        
+        height: 300px;
+        width: 300px;
+
+    }
+    
+
+  
  
 }
 

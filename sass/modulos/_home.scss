@@ -9,29 +9,29 @@
 .home__fondo{
     background-color: $azul-oscuro;    
 }
-/////
+
 
 .separator-ribbon{
     width: 100%;
     overflow: hidden;
     position: absolute;
     z-index: 1;
-    //agregar
+
 }
 
 .home__content__logo{
     width: 74%;
     height: 530px; 
-    //agregar 
+
 }
 
 .home__logo__grande__config{
-//agregar esto
+
   width: 89%; 
   margin-top: -3%;
 
 }
-//
+
 
 .home__content__logo__chico{
     width: 11%;
@@ -44,14 +44,10 @@
 }
 
 
-//////
-
-
-
 .home__titulo__principal_1{
     font-weight: bold;
     color: $amarillo;
-    font-size: 50px;
+    font-size: 3.4rem;
     line-height: 122%;
     position: relative;
 }
@@ -62,7 +58,7 @@
   margin-top: 20px;
   position: relative;
   z-index: 100
-//agregar esto
+
 }
 
 
@@ -182,23 +178,20 @@ textarea::placeholder{
     background-color: $amarillo;    
 }
 
+
 /* --- MEDIAQUERIES ---  */
 // Small devices (landscape phones, 576px and up)
 
-
-@media (max-width: 576px) {
+@media screen and (max-width: 492px) {
     .home__checkbox{
         margin-right: -4px;
         text-align: center;        
     }
-    .ver{
-        display: flex;
-        align-items: center;
-    } 
-    .home__titulo__principal_1{
-        font-size: 25px;
-     } 
- }
+    h1.home__titulo__principal_1{
+        font-size: 30px;
+    }
+
+}
 
 @media (max-width: 576px) {
 
@@ -206,7 +199,7 @@ textarea::placeholder{
         margin-left: 4rem;
         margin-top: 20px;
       
-    }
+    } 
 
      .home__btn_cel{      
          padding: 5px 10px 5px 10px;
@@ -222,12 +215,16 @@ textarea::placeholder{
     .home__separador__contenido{
         height: 10px;    
     } 
+
+    .home__titulo__principal_1{
+        font-size: 2rem;
+    }
 }
 
 /* Dispositivo XL */
 @media screen and (max-width: 1200px) {
     .home__titulo__principal_1{
-        font-size: 40px;
+        font-size: 3rem;
     }
 }
 
