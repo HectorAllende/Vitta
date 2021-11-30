@@ -307,6 +307,13 @@ textarea::placeholder {
     font-size: 3rem;
   }
 }
+/* Dispositivo XL */
+@media screen and (max-width: 1350px) {
+  .home__logo__grande__config {
+    height: 95%;
+    margin-top: -3%;
+  }
+}
 .somos__separador {
   width: 100%;
   overflow: hidden;

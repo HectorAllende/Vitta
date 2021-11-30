@@ -228,6 +228,19 @@ textarea::placeholder{
     }
 }
 
+/* Dispositivo XL */
+@media screen and (max-width: 1350px) {
+    .home__logo__grande__config{
+
+        height: 95%; 
+        margin-top: -3%;
+      
+      }
+      
+}
+
+
+
 
 
 
