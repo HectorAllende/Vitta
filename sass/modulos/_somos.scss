@@ -46,6 +46,19 @@
     height: 100%;
     background-color: transparent;
     cursor: pointer;
+   
+}
+
+/* Dispositivo sm */
+@media screen and (max-width: 492px) {
+    .somos__boton__slider{
+    
+       
+        height: 50%;
+        width:50%
+  
+       
+    }
 }
 
 
@@ -54,6 +67,7 @@
     .somos__separador__contenido{
         height: 30px;
     } 
+ 
  
 }
 

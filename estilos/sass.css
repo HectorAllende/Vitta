@@ -101,19 +101,37 @@ li {
 
 .home {
   top: 4em;
-  padding-top: 20px;
-  top: 20px;
-  padding-bottom: 60px;
-}
-
-.home__fondo {
-  background-color: #191D2D;
 }
 
 .home__fondo1 {
+  background-color: #191D2D;
+}
+
+.home__titulo__principal_nuevo {
+  color: #d3d92e;
+  line-height: 122%;
+}
+
+.home__parrafo1 {
+  color: #FFFFFF;
+  font-weight: 300;
+  font-size: 16px;
+  text-align: justify;
+  line-height: 126%;
+}
+
+.home_borde {
+  border-bottom: solid 20px #d3d92e;
+}
+
+.home__contenido__principal1 {
+  color: #d3d92e;
+  line-height: 122%;
+}
+
+.home__fondo {
   background-image: url(../../imagenes/home/img-principal.png);
-  background-size: cover;
-  background-position: left;
+  background-size: 90%;
   background-repeat: no-repeat;
 }
 
@@ -160,10 +178,9 @@ li {
 }
 
 .home__separador__formulario {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  z-index: 10;
+  width: 50%;
+  position: absolute;
+  z-index: 2;
   margin-top: -500px;
 }
 
@@ -220,15 +237,12 @@ li {
 }
 
 .home__titulo_formulario {
-  font-weight: bold;
-  font-size: 22px;
-  letter-spacing: -1.5pt;
+  letter-spacing: -1.4pt;
 }
 
 .home__titulo_formulario_secundario {
-  font-weight: lighter;
-  font-size: 0.875rem;
   color: #8E8E8E;
+  letter-spacing: -1.2pt;
 }
 
 .home__checkbox {
@@ -285,42 +299,18 @@ textarea::placeholder {
   }
 }
 @media (max-width: 576px) {
-  .home__contenido__principal {
-    margin-left: 4rem;
-    margin-top: 20px;
-  }
-
   .home__btn_cel {
     padding: 5px 10px 5px 10px;
   }
 }
 /* Dispositivo MD */
 @media screen and (max-width: 768px) {
-  .home__titulo__principal_1 {
-    font-size: 35px;
-  }
-
   .home__separador__contenido {
     height: 10px;
   }
-
-  .home__titulo__principal_1 {
-    font-size: 2rem;
-  }
 }
 /* Dispositivo XL */
-@media screen and (max-width: 1200px) {
-  .home__titulo__principal_1 {
-    font-size: 3rem;
-  }
-}
 /* Dispositivo XL */
-@media screen and (max-width: 1350px) {
-  .home__logo__grande__config {
-    height: 95%;
-    margin-top: -3%;
-  }
-}
 .somos__separador {
   width: 100%;
   overflow: hidden;
@@ -367,6 +357,13 @@ textarea::placeholder {
   cursor: pointer;
 }
 
+/* Dispositivo sm */
+@media screen and (max-width: 492px) {
+  .somos__boton__slider {
+    height: 50%;
+    width: 50%;
+  }
+}
 /* Dispositivo MD */
 @media screen and (max-width: 768px) {
   .somos__separador__contenido {
@@ -565,9 +562,7 @@ section.diferencialesVittaUrbano {
 
 .ubicacion__titulo_principal {
   color: #d3d92e;
-  font-weight: bold;
   line-height: 122%;
-  font-size: 40px;
 }
 
 .ubicacion__titulo_secundario {
@@ -577,17 +572,7 @@ section.diferencialesVittaUrbano {
 }
 
 .ubicacion__parrafo {
-  margin-top: 1.5rem;
-  color: #FFFFFF;
-  line-height: 122%;
   text-align: justify;
-  color: #FFFFFF;
-  font-weight: 300;
-  font-size: 16px;
-}
-
-.ubicacion__contenido {
-  margin-top: 3.5rem;
 }
 
 .ubicacion__icono {
@@ -639,16 +624,6 @@ section.diferencialesVittaUrbano {
   width: 15%;
   margin-top: -110px;
   margin-left: 630px;
-}
-
-.ubicacion__content__logo {
-  width: 50%;
-}
-
-.ubicacion__logo {
-  width: 8%;
-  margin-top: -720px;
-  margin-left: -30px;
 }
 
 .ubicacion__content__persona {

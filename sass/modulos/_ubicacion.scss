@@ -30,10 +30,9 @@
 
 
 .ubicacion__titulo_principal{
-    color:$amarillo;
-    font-weight: bold ;
+    color:$amarillo;   
     line-height: 122%;;
-    font-size: 40px;
+
 }
 
 .ubicacion__titulo_secundario{
@@ -42,21 +41,14 @@
     font-size: 30px;
 }
 
-.ubicacion__parrafo{
-    margin-top: 1.5rem;
-    color: $blanco;
-    line-height: 122%; 
+.ubicacion__parrafo{ 
     text-align: justify;
 
-    color: $blanco;
-    font-weight: $font-weight-light;
-    font-size: 16px;
+
       
 }
 
-.ubicacion__contenido{
-    margin-top: 3.5rem;
-}
+
 
 .ubicacion__icono{
     margin-top: 5rem;
@@ -124,15 +116,6 @@
 }
 
 
-.ubicacion__content__logo{
-    width: 50%;
-}
-
-.ubicacion__logo{
-    width: 8%; 
-    margin-top: -720px;
-    margin-left: -30px;
-}
 
 
 // Persona
@@ -178,8 +161,7 @@
         }
     }
 
-    .ubicacion__mapa{
-        
+    .ubicacion__mapa{        
         height: 300px;
         width: 300px;
 

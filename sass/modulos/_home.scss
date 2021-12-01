@@ -1,22 +1,41 @@
 //Home 
 .home{
-    top:4em;
-  padding-top: 20px;  
-  top:20px;
-  padding-bottom: 60px;
+  top:4em;
+
+
+}
+.home__fondo1{
+    background-color: $azul-oscuro;    
+}
+.home__titulo__principal_nuevo{
+     color: $amarillo;
+    line-height: 122%;
+}
+
+.home__parrafo1{
+    color: $blanco;
+    font-weight: $font-weight-light;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 126%;   
+}
+
+.home_borde{
+    border-bottom: solid 20px $amarillo;
+}
+
+.home__contenido__principal1{
+    color: $amarillo;
+    line-height: 122%;
 }
 
 .home__fondo{
-    background-color: $azul-oscuro;    
+    background-image: url(../../imagenes/home/img-principal.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+  
 }
 
-.home__fondo1{
-    background-image: url(../../imagenes/home/img-principal.png);
-    background-size:cover; 
-    background-position: left;
-    background-repeat: no-repeat;
-    
-}   
 
 
 .separator-ribbon{
@@ -30,7 +49,6 @@
 .home__content__logo{
     width: 74%;
     height: 530px; 
-
 }
 
 .home__logo__grande__config{
@@ -71,10 +89,9 @@
 
 
 .home__separador__formulario{
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    z-index: 10;
+    width: 50%;  
+    position: absolute;
+    z-index: 2;
     margin-top: -500px;
 }
 
@@ -134,14 +151,13 @@
 }
 
 .home__titulo_formulario{
-    font-weight: bold;
-    font-size: 22px;
-    letter-spacing: -1.5pt;
+  
+    letter-spacing: -1.4pt;
 }
 .home__titulo_formulario_secundario{
-    font-weight: lighter;
-    font-size: $font-size-sm;
-    color: $input-texto;
+
+     color: $input-texto;     
+    letter-spacing: -1.2pt;
 }
 
 .home__checkbox{
@@ -202,48 +218,28 @@ textarea::placeholder{
 }
 
 @media (max-width: 576px) {
-
-    .home__contenido__principal{
-        margin-left: 4rem;
-        margin-top: 20px;
-      
-    } 
-
      .home__btn_cel{      
          padding: 5px 10px 5px 10px;
      }
  }
 
+
 /* Dispositivo MD */
 @media screen and (max-width: 768px) {
-    .home__titulo__principal_1{
-        font-size: 35px;
-    }
-
     .home__separador__contenido{
         height: 10px;    
     } 
-
-    .home__titulo__principal_1{
-        font-size: 2rem;
-    }
+  
 }
 
 /* Dispositivo XL */
 @media screen and (max-width: 1200px) {
-    .home__titulo__principal_1{
-        font-size: 3rem;
-    }
+
 }
 
 /* Dispositivo XL */
 @media screen and (max-width: 1350px) {
-    .home__logo__grande__config{
 
-        height: 95%; 
-        margin-top: -3%;
-      
-      }
       
 }
 
