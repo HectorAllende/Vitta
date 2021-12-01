@@ -22,14 +22,13 @@ li {
 .header__enlace {
   color: #FFFFFF;
   text-transform: uppercase;
-  transition: color 0.3s ease;
 }
 .header__enlace:hover {
   color: #B0B3B8;
 }
 .header__enlace:focus {
   color: #B0B3B8;
-  border-bottom: #d3d92e 3px solid;
+  border-bottom: #d3d92e 4px solid;
 }
 
 .header__boton__menu {

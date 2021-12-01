@@ -19,6 +19,8 @@ document.querySelector('.arriba').addEventListener('click', () => {
 })
 
 
+
+
 //Botones Diferenciales
 
 document.querySelector('#vitta').addEventListener('click',()=>{
