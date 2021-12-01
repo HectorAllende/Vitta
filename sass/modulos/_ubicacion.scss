@@ -9,8 +9,7 @@
     font-size: 40px;
     font-weight: bold;
     margin-top: 85px;
-    z-index: 1;
-    
+    z-index: 1;    
 }
 
 .ubicacion__separator{
@@ -30,9 +29,7 @@
 
 
 .ubicacion__titulo_principal{
-    color:$amarillo;   
-  
-
+    color:$amarillo;
 }
 
 
@@ -42,19 +39,32 @@
 }
 
 
-
 .ubicacion__icono{
     margin-top: 5rem;
     margin-left: 5rem;
-
 }
 
 .ubicacion__persona__col{
     background-image: url(../../imagenes/ubicacion/persona.png);
     background-size: cover;
     background-position: left;
-  
+}
 
+//puntos
+
+.ubicacion__nuevos__puntos{
+    background-image: url(../../imagenes/ubicacion/puntos.png);
+    background-size: 20%;
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+
+.ubicacion__nuevos__circulo{
+    background-image: url(../../imagenes/ubicacion/circulo.png);
+    background-size: 30% ;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+ 
 }
 
 .ubicacion__mapa{
@@ -62,17 +72,14 @@
     border-top: 0px;
     border-left: 0px;
     border-radius: 20px;
-
-
 }
+
 .ubicacion__card{
     display: flex;
     align-content: center;
     align-items: center;
     justify-content: center;
 }
-
-
 
 /////
 
@@ -139,12 +146,6 @@
             background-color: $amarillo;
             top:-1.5em;       
         }
-    }
-
-    .ubicacion__mapa{        
-        height: 300px;
-        width: 300px;
-
     }
   
  

@@ -34,14 +34,14 @@
                 <span class="toggler-icon bottom-bar"></span>
             </button>
             <div class="collapse navbar-collapse color" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto align-items-center rounded ">
+                <ul class="navbar-nav ms-auto align-items-center rounded cerrar ">
                     <li class="nav-item">
                         <a class="nav-link active header__enlace arriba" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link  header__enlace seccion1" aria-current="page" href="#somos">Somos</a>
                     </li>
-                 
+
                     <li class="nav-item">
                         <a class="nav-link enlace header__enlace seccion2" href="#diferenciales">Diferenciales</a>
                     </li>
@@ -55,7 +55,6 @@
                 <div class="d-flex flex-row justify-content-center align-items-center p-3 ">
                     <div class="mx-3">
                         <a href="https://www.instagram.com/vitta.gl/?hl=es" target="_blank" rel="noopener noreferrer">
-
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-instagram enlace" viewBox="0 0 16 16">
                                 <path
@@ -80,109 +79,134 @@
 
     <!-- Home  -->
     <section class="home " id="home">
-        <div class="container-fluid home_borde  ">
-            <div class="row home_principal home__fondo1">
-                <!-- Titulos principales -->
+        <div class="container-fluid home_borde h-100">
+            <div class="row home_principal home__fondo1 h-100">
+                <!--Contenido Principal -->
                 <div class="col-12 col-xl-6 mb-5 p-5 d-flex flex-column justify-content-center  home__fondo">
-                    <div class="col home__titulo__principal_nuevo fw-bold ps-5">
-                        <h1 class="display-4 fw-bold">Viví tu</h1>
-                        <h1 class="display-4 fw-bold">mejor versión</h1>
-                    </div>
-                    <div class="col my-2 my-sm-4 d-none d-sm-block">
-                        <div class="d-flex justify-content-around ">
 
-                            <img src="./imagenes/home/vitta_vitta.png" alt="vitta" class="img-fluid">
+                    <div class="container">
+                        <div class="row d-flex flex-column justify-content-center align-items-center">
+                            <!-- Titulo principal -->
+                            <div
+                                class="col-9 d-flex flex-column justify-content-center align-content-center py-5 home__titulo__principal_nuevo fw-bold">
+                                <h1 class="display-1 fw-bold">Viví tu</h1>
+                                <h1 class="display-1 fw-bold">mejor versión</h1>
+                            </div>
 
-                            <img src="./imagenes/home/vitta_rio.png" alt="vittaRio" class="img-fluid">
+                            <!-- Logos -->
+                            <div class="col-9 py-4 d-none d-sm-block">
+                                <div class="d-flex justify-content-between ">
 
-                            <img src="./imagenes/home/vitta_urbano.png" alt="vittaUrbano" class="img-fluid">
-                        </div>
-                    </div>
-                    <div class="col mt-4 mt-sm-1">
-                        <p class="home__parrafo1">A través del diseño de sus áreas comunes, equipamiento, mobiliarios y
-                            diversos espacios temáticos, Vitta <strong class="fw-bold"> fusiona la vida urbana cotidiana
-                                con actividades recreativas, deportivas, lúdicas y meditativas</strong> para crear un
-                            paisaje residencial innovador.</p>
-                    </div>
-                    <div class="col d-flex justify-content-center">
-                        <button class="home__btn mt-3 d-block d-xl-none" data-bs-toggle="modal"
-                            data-bs-target="#formulario">Dejanos una consulta</button>
-                    </div>
+                                    <img src="./imagenes/home/vitta_vitta.png" alt="vitta" class="img-fluid">
 
-                    <!-- Modal -->
-                    <div class="modal fade" id="formulario" tabindex="-1" aria-labelledby="exampleModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="px-4">
-                                    <div class="modal-header">
-                                        <p class="fw-bold home__titulo_formulario fs-3 mt-3">¿Te interesa
-                                            este
-                                            proyecto?</p>
-                                        <button type="button" class="btn-close home__modal" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <form>
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <input type="text" placeholder="Nombre:" name="nombre"
-                                                        class="home__input" autocomplete="off">
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <input type="email" placeholder="Email:" name="email"
-                                                        class="home__input" autocomplete="off">
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <input type="tel" placeholder="Celular:" name="celular"
-                                                        class="home__input" autocomplete="off">
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <textarea placeholder="Mensaje:" name="nombre"
-                                                        class="home__input"></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="row mt-3">
+                                    <img src="./imagenes/home/vitta_rio.png" alt="vittaRio" class="img-fluid">
 
-                                                <div class="col-12">
-                                                    <p class="home__titulo_formulario_secundario">¿Donde
-                                                        preferís
-                                                        que te contactemos?</p>
-                                                </div>
+                                    <img src="./imagenes/home/vitta_urbano.png" alt="vittaUrbano" class="img-fluid">
+                                </div>
+                            </div>
+
+                            <!-- Texto -->
+                            <div class="col-9 mt-4 mt-sm-1 py-5">
+                                <p class="home__parrafo1">A través del diseño de sus áreas comunes, equipamiento,
+                                    mobiliarios y
+                                    diversos espacios temáticos, Vitta <strong class="fw-bold"> fusiona la vida urbana
+                                        cotidiana
+                                        con actividades recreativas, deportivas, lúdicas y meditativas</strong> para
+                                    crear un
+                                    paisaje residencial innovador.</p>
+                            </div>
+
+                            <!-- Boton -->
+                            <div class="col-12 col-md-6 d-flex justify-content-center">
+                                <button class="home__btn mt-3 d-block d-xl-none" data-bs-toggle="modal"
+                                    data-bs-target="#formulario">Dejanos una consulta</button>
+                            </div>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="formulario" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="px-4">
+                                            <div class="modal-header">
+                                                <p class="fw-bold home__titulo_formulario fs-3 mt-3">¿Te interesa
+                                                    este
+                                                    proyecto?</p>
+                                                <button type="button" class="btn-close home__modal"
+                                                    data-bs-dismiss="modal" aria-label="Close"></button>
                                             </div>
-                                            <div class="row mt-3">
-                                                <div class="col-12 d-flex justify-content-between align-items-center ">
-                                                    <div>
-                                                        <label
-                                                            class="home__titulo_formulario_secundario mx-2">Celular</label>
-                                                        <input type="checkbox" class="home__checkbox">
+                                            <div class="modal-body">
+                                                <form>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <input type="text" placeholder="Nombre:" name="nombre"
+                                                                class="home__input" autocomplete="off">
+                                                        </div>
                                                     </div>
-                                                    <div class="">
-                                                        <label
-                                                            class="home__titulo_formulario_secundario mx-2">Email</label>
-                                                        <input type="checkbox" class="home__checkbox fs-6">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <input type="email" placeholder="Email:" name="email"
+                                                                class="home__input" autocomplete="off">
+                                                        </div>
                                                     </div>
-                                                    <button class="home__btn home__btn_cel">Enviar</button>
-                                                </div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <input type="tel" placeholder="Celular:" name="celular"
+                                                                class="home__input" autocomplete="off">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <textarea placeholder="Mensaje:" name="nombre"
+                                                                class="home__input"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-3">
+
+                                                        <div class="col-12">
+                                                            <p class="home__titulo_formulario_secundario">¿Donde
+                                                                preferís
+                                                                que te contactemos?</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-3">
+                                                        <div
+                                                            class="col-12 d-flex justify-content-between align-items-center ">
+                                                            <div>
+                                                                <label
+                                                                    class="home__titulo_formulario_secundario mx-2">Celular</label>
+                                                                <input type="checkbox" class="home__checkbox">
+                                                            </div>
+                                                            <div class="">
+                                                                <label
+                                                                    class="home__titulo_formulario_secundario mx-2">Email</label>
+                                                                <input type="checkbox" class="home__checkbox fs-6">
+                                                            </div>
+                                                            <button class="home__btn home__btn_cel">Enviar</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
                                             </div>
-                                        </form>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+
+
+
+
                         </div>
                     </div>
-                </div>
 
+
+
+
+                </div>
                 <!-- Carrusel -->
-                <div class="col-12 col-xl-6 g-0 home_carrusel1">
-                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
+                <div class="col-12 col-xl-6 g-0 home_carrusel1 h-100">
+                    <!-- Contenido Carrusel -->
+                    <div id="carouselExampleCaptions" class="carousel slide h-100" data-bs-ride="carousel">
+                        <div class="carousel-indicators h-100">
                             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
                                 class="active mb-5" aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
@@ -190,32 +214,31 @@
                             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
                                 aria-label="Slide 3"></button>
                         </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="imagenes/home/vitta-1.jpg" class="d-block img-fluid w-100" alt="imagen">
+                        <div class="carousel-inner h-100">
+                            <div class="carousel-item active h-100">
+                                <img src="imagenes/home/vitta-1.jpg" class="d-block img-fluid h-100" alt="imagen">
                                 <div class="carousel-caption d-none d-md-block">
 
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <img src="imagenes/home/vitta-rio.jpg" class="d-block img-fluid w-100" alt="imagen2">
+                            <div class="carousel-item h-100">
+                                <img src="imagenes/home/vitta-rio.jpg" class="d-block img-fluid h-100" alt="imagen2">
                                 <div class="carousel-caption d-none d-md-block">
 
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <img src="imagenes/home/vitta-urbano.jpg" class="d-block img-fluid w-100" alt="imagen3">
+                            <div class="carousel-item h-100">
+                                <img src="imagenes/home/vitta-urbano.jpg" class="d-block img-fluid h-100" alt="imagen3">
                                 <div class="carousel-caption d-none d-md-block">
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
+                    <!-- Contenido formulario -->
                     <div class="home__separador__formulario">
                         <!-- FOrmulario -->
                         <div
-                            class=" col-sm-6 d-none d-xl-block bg-white rounded-3 px-4 pb-4 pt-5 home__formulario__ubicacion shadow-lg">
+                            class=" col-sm-6 d-none d-xl-block bg-white rounded-3 p-5 home__formulario__ubicacion shadow-lg">
                             <div class="row">
                                 <div class="col">
                                     <p class="fw-bold fs-5 lh-1 home__titulo_formulario">¿Te interesa este proyecto?</p>
@@ -266,45 +289,46 @@
                                 </div>
                             </form>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
             </div>
-
         </div>
     </section>
 
+
     <!-- Somos -->
-    <section id="somos">
-        <div id="carousel" class="carousel slide somos" data-interval="false">
+    <section id="somos" class="h-100">
+        <div id="carousel" class="carousel slide somos somos__borde_bottom" data-interval="false">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carousel" data-bs-slide-to="0"
                     class="active somos__boton__vista mb-3" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
+
             <div class="carousel-inner somos__img">
                 <div class="carousel-item active" data-bs-target="#carousel" data-bs-slide-to="0">
-                    <img src="./imagenes/somos/slide1.png" class="d-block w-100 somos_imagen_fondo img-fluid"
+                    <img src="./imagenes/somos/slide1.png" class="d-block h-100 w-100 somos_imagen_fondo img-fluid"
                         alt="salide1">
                 </div>
                 <div class="carousel-item" data-bs-target="#carousel" data-bs-slide-to="1">
-                    <img src="./imagenes/somos/fondo2.jpg" class="d-block w-100 somos_imagen_fondo img-fluid"
+                    <img src="./imagenes/somos/fondo2.jpg" class="d-block h-100 somos_imagen_fondo img-fluid"
                         alt="salide2">
                 </div>
                 <div class="carousel-item" data-bs-target="#carousel" data-bs-slide-to="2">
-                    <img src="./imagenes/somos/fondo3.jpg" class="d-block w-100 somos_imagen_fondo img-fluid"
+                    <img src="./imagenes/somos/fondo3.jpg" class="d-block h-100 somos_imagen_fondo img-fluid"
                         alt="salide3">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
-            </button>
+            </button> -->
         </div>
         <div class="d-flex somos__link">
             <div class="somos__boton_rectangulo">
@@ -330,24 +354,17 @@
                 </a>
             </div>
         </div>
+
         <div class="somos__separador mb-5 d-none d-sm-block">
             <div class="somos__separador__contenido"></div>
         </div>
     </section>
 
     <!-- Diferenciales Navegación -->
-    <section style="min-height: 20vh;" id="diferenciales" class="diferenciales">
-        <!-- 
-           <div class="diferenciales__separator-ribbon">
-            <div class="diferenciales__content__logo__chico d-none d-lg-block">
-                <img src="./imagenes/home/logoChico.svg" alt="logo1" class="diferenciales__logo__chico__config">
-            </div>
-        </div>
-        <div class="diferenciales__separator-ribbon__circulo d-none d-xl-block">
-            <div class="diferenciales__content__circulo">
-                <img src="./imagenes/diferenciales/circulos.svg" alt="logo1" class="diferenciales__circulo img-fluid">
-            </div>
-        </div> -->
+
+    <section style="min-height: 20vh;" id="diferenciales" class="diferenciales diferenciales__logo__chico ">
+
+
         <div class="container ">
             <div class="row">
                 <div class="d-flex flex-wrap diferenciales__header">
@@ -371,163 +388,176 @@
                     </nav>
                 </div>
             </div>
+        </div>
+
     </section>
 
+
     <!-- Diferenciales Vitta -->
+    <section id="diferencialesVitta" class="diferencialesVitta d-block diferenciales__circulo ">
 
-    <section id="diferencialesVitta" class="diferencialesVitta d-block">
-        <div class="container vitta_card1">
-            <div class="row diferenciales__card prueba">
-                <div class="col-12 d-flex flex-wrap justify-content-center align-items-center">
-                    <div class="col-6 col-md-4 mb-1 mb-sm-2 d-flex justify-content-center">
-                        <div class="card diferenciales__card__box shadow">
-                            <img src="./imagenes/diferenciales/areaComercial.png"
-                                class="card-img-top diferenciales__card__imagen" alt="areaComercial" id="card1">
-                            <p class="diferenciales__btn diferenciales__btn" id="texto1">Área comercial</p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 mb-1 mb-sm-2 d-flex justify-content-center">
-                        <div class="card diferenciales__card__box shadow">
-                            <img src="./imagenes/diferenciales/guarderiaNautica.png"
-                                class="card-img-top diferenciales__card__imagen" alt="areaComercial" id="card2">
-                            <p class="diferenciales__btn color" id="texto2">Guardería Náutica</p>
+        <div class="diferenciales__puntos__nuevos">
+            <div class="diferenciales__logo">
 
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 mb-1 mb-sm-2 d-flex justify-content-center">
-                        <div class="card diferenciales__card__box shadow">
-                            <img src="./imagenes/diferenciales/circuitoRecreativo.png"
-                                class="card-img-top diferenciales__card__imagen" alt="areaComercial" id="card3">
-                            <p class="diferenciales__btn" id="texto3">Circuito Deportivo Recreativo</p>
 
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 mb-1 mb-sm-2 d-flex justify-content-center">
-                        <div class="card diferenciales__card__box shadow">
-                            <img src="./imagenes/diferenciales/relax&bosqueZen.png"
-                                class="card-img-top diferenciales__card__imagen" alt="areaComercial" id="card4">
-                            <p class="diferenciales__btn" id="texto4">Zona Relax & Bosque Zen</p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 mb-1 mb-sm-2 d-flex justify-content-center">
-                        <div class="card diferenciales__card__box shadow" id="card5">
-                            <img src="./imagenes/diferenciales/espaciosComunes.png"
-                                class="card-img-top diferenciales__card__imagen" alt="areaComercial" id="card5">
-                            <p class="diferenciales__btn" id="texto5">Espacios Comunes</p>
-                        </div>
-                    </div>
-                    <div class="diferenciales__separator-ribbon__puntos d-none d-lg-block">
-                        <div class="diferenciales__content__puntos" id="card6">
-                            <img src="./imagenes/diferenciales/puntos.svg" alt="logo1"
-                                class="diferenciales__puntos img-fluid">
+                <div class="container vitta_card1 ">
+
+                    <div class="row diferenciales__card">
+                        <div class="col-12 d-flex flex-wrap justify-content-center align-items-center ">
+                            <div class="col-6 col-md-4 mb-2 mb-lg-5  d-flex justify-content-center">
+                                <div class="card diferenciales__card__box shadow">
+                                    <img src="./imagenes/diferenciales/areaComercial.png"
+                                        class="card-img-top diferenciales__card__imagen" alt="areaComercial" id="card1">
+                                    <p class="diferenciales__btn diferenciales__btn" id="texto1">Área comercial</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 mb-2 mb-lg-5  d-flex justify-content-center">
+                                <div class="card diferenciales__card__box shadow">
+                                    <img src="./imagenes/diferenciales/guarderiaNautica.png"
+                                        class="card-img-top diferenciales__card__imagen" alt="areaComercial" id="card2">
+                                    <p class="diferenciales__btn color" id="texto2">Guardería Náutica</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 mb-2 mb-lg-5  d-flex justify-content-center">
+                                <div class="card diferenciales__card__box shadow">
+                                    <img src="./imagenes/diferenciales/circuitoRecreativo.png"
+                                        class="card-img-top diferenciales__card__imagen" alt="areaComercial" id="card3">
+                                    <p class="diferenciales__btn" id="texto3">Circuito Deportivo Recreativo</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 mb-2 mb-lg-5  d-flex justify-content-center">
+                                <div class="card diferenciales__card__box shadow">
+                                    <img src="./imagenes/diferenciales/relax&bosqueZen.png"
+                                        class="card-img-top diferenciales__card__imagen" alt="areaComercial" id="card4">
+                                    <p class="diferenciales__btn" id="texto4">Zona Relax & Bosque Zen</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 mb-2 mb-lg-5 d-flex justify-content-center">
+                                <div class="card diferenciales__card__box shadow" id="card5">
+                                    <img src="./imagenes/diferenciales/espaciosComunes.png"
+                                        class="card-img-top diferenciales__card__imagen" alt="areaComercial" id="card5">
+                                    <p class="diferenciales__btn" id="texto5">Espacios Comunes</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
+
+
     </section>
 
     <!-- Diferenciales VittaRio -->
-    <section id="diferencialesVittaRio" class=" diferencialesVittaRio d-none">
-        <div class="container vitta_card1">
-            <div class="row diferenciales__card prueba">
-                <div class="col-12 d-flex flex-wrap justify-content-center align-items-center">
-                    <div class="col-6 col-md-4 mb-1 mb-sm-2 d-flex justify-content-center">
-                        <div class="card diferenciales__card__box shadow">
-                            <img src="./imagenes/diferenciales/areaComercial.png"
-                                class="card-img-top diferenciales__card__imagen" alt="areaComercial" id="card1">
-                            <p class="diferenciales__btn diferenciales__btn" id="texto1">Área comercial</p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 mb-1 mb-sm-2 d-flex justify-content-center">
-                        <div class="card diferenciales__card__box shadow">
-                            <img src="./imagenes/diferenciales/vittaRio/espacioLudicos.png"
-                                class="card-img-top diferenciales__card__imagen" alt="areaComercial" id="card2">
-                            <p class="diferenciales__btn color" id="texto2">Espacio Lúdicos</p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 mb-1 mb-sm-2 d-flex justify-content-center">
-                        <div class="card diferenciales__card__box shadow">
-                            <img src="./imagenes/diferenciales/circuitoRecreativo.png"
-                                class="card-img-top diferenciales__card__imagen" alt="areaComercial" id="card3">
-                            <p class="diferenciales__btn" id="texto3">Circuito Deportivo Recreativo</p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 mb-1 mb-sm-2 d-flex justify-content-center">
-                        <div class="card diferenciales__card__box shadow">
-                            <img src="./imagenes/diferenciales/relax&bosqueZen.png"
-                                class="card-img-top diferenciales__card__imagen" alt="areaComercial" id="card4">
-                            <p class="diferenciales__btn" id="texto4">Área Zen</p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 mb-1 mb-sm-2 d-flex justify-content-center">
-                        <div class="card diferenciales__card__box shadow" id="card5">
-                            <img src="./imagenes/diferenciales/espaciosComunes.png"
-                                class="card-img-top diferenciales__card__imagen" alt="areaComercial" id="card5">
-                            <p class="diferenciales__btn" id="texto5">Espacios Comunes</p>
-                        </div>
-                    </div>
-
-                    <div class="diferenciales__separator-ribbon__puntos d-none d-lg-block">
-                        <div class="diferenciales__content__puntos" id="card6">
-                            <img src="./imagenes/diferenciales/puntos.svg" alt="logo1"
-                                class="diferenciales__puntos img-fluid">
+    <section id="diferencialesVittaRio" class=" diferencialesVittaRio d-none diferenciales__circulo">
+        <div class="diferenciales__puntos__nuevos">
+            <div class="diferenciales__logo">
+                <div class="container vitta_card1">
+                    <div class="row diferenciales__card prueba">
+                        <div class="col d-flex flex-wrap justify-content-center align-items-center ">
+                            <div class="col-6 col-md-4 mb-2 mb-lg-5 d-flex justify-content-center">
+                                <div class="card diferenciales__card__box shadow">
+                                    <img src="./imagenes/diferenciales/areaComercial.png"
+                                        class="card-img-top diferenciales__card__imagen img-fluid" alt="areaComercial"
+                                        id="card1">
+                                    <p class="diferenciales__btn diferenciales__btn" id="texto1">Área comercial</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 mb-2 mb-lg-5 d-flex justify-content-center">
+                                <div class="card diferenciales__card__box shadow">
+                                    <img src="./imagenes/diferenciales/vittaRio/espacioLudicos.png"
+                                        class="card-img-top diferenciales__card__imagen img-fluid" alt="areaComercial"
+                                        id="card2">
+                                    <p class="diferenciales__btn color" id="texto2">Espacio Lúdicos</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 mb-2 mb-lg-5 d-flex justify-content-center">
+                                <div class="card diferenciales__card__box shadow">
+                                    <img src="./imagenes/diferenciales/circuitoRecreativo.png"
+                                        class="card-img-top diferenciales__card__imagen img-fluid" alt="areaComercial"
+                                        id="card3">
+                                    <p class="diferenciales__btn" id="texto3">Circuito Deportivo Recreativo</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 mb-2 mb-lg-5 d-flex justify-content-center">
+                                <div class="card diferenciales__card__box shadow">
+                                    <img src="./imagenes/diferenciales/relax&bosqueZen.png"
+                                        class="card-img-top diferenciales__card__imagen" alt="areaComercial" id="card4">
+                                    <p class="diferenciales__btn" id="texto4">Área Zen</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 mb-2 mb-lg-5 d-flex justify-content-center">
+                                <div class="card diferenciales__card__box shadow" id="card5">
+                                    <img src="./imagenes/diferenciales/espaciosComunes.png"
+                                        class="card-img-top diferenciales__card__imagen" alt="areaComercial" id="card5">
+                                    <p class="diferenciales__btn" id="texto5">Espacios Comunes</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     </section>
 
 
     <!-- Diferenciales VittaUrbano -->
-    <section id="diferencialesVittaUrbano" class=" diferencialesVittaUrbano d-none">
-        <div class="container vitta_card1">
-            <div class="row diferenciales__card prueba">
-                <div class="col-12 d-flex flex-wrap align-items-center justify-content-end  justify-content-lg-end">
-                    <div class="col-6 col-md-5 mb-1 mb-sm-2 d-flex justify-content-center">
-                        <div class="card diferenciales__card__box shadow">
-                            <img src="./imagenes/diferenciales/areaComercial.png"
-                                class="card-img-top diferenciales__card__imagen" alt="areaComercial" id="card1">
-                            <p class="diferenciales__btn diferenciales__btn" id="texto1">Área comercial</p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-5 mb-1 mb-sm-2 d-flex justify-content-center">
-                        <div class="card diferenciales__card__box shadow">
-                            <img src="./imagenes/diferenciales/vittaUrbano/espacioUrbano.png"
-                                class="card-img-top diferenciales__card__imagen" alt="areaComercial" id="card2">
-                            <p class="diferenciales__btn color" id="texto2">Huertas Urbanas</p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-5 mb-1 mb-sm-2 d-flex justify-content-center">
-                        <div class="card diferenciales__card__box shadow">
-                            <img src="./imagenes/diferenciales/circuitoRecreativo.png"
-                                class="card-img-top diferenciales__card__imagen" alt="areaComercial" id="card3">
-                            <p class="diferenciales__btn" id="texto3">Circuito Deportivo Recreativo</p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-5 mb-1 mb-sm-2 d-flex justify-content-center">
-                        <div class="card diferenciales__card__box shadow" id="card5">
-                            <img src="./imagenes/diferenciales/espaciosComunes.png"
-                                class="card-img-top diferenciales__card__imagen" alt="areaComercial" id="card5">
-                            <p class="diferenciales__btn" id="texto5">Espacios Comunes</p>
-                        </div>
-                    </div>
-                    <div class="diferenciales__separator-ribbon__puntos  d-none d-lg-block">
-                        <div class="diferenciales__content__puntos" id="card6">
-                            <img src="./imagenes/diferenciales/puntos.svg" alt="logo1"
-                                class="diferenciales__puntos img-fluid">
+    <section id="diferencialesVittaUrbano" class=" diferencialesVittaUrbano d-none diferenciales__circulo">
+        <div class="diferenciales__puntos__nuevos">
+            <div class="diferenciales__logo">
+                <div class="container vitta_card1">
+                    <div class="row diferenciales__card prueba">
+                        <div class="col">
+                            <div class="d-flex flex-wrap align-items-center justify-content-center">
+
+                                <div class="col-6 col-sm-4 mb-2 mb-lg-5 mx-4 d-flex justify-content-center">
+                                    <div class="card diferenciales__card__box shadow">
+                                        <img src="./imagenes/diferenciales/areaComercial.png"
+                                            class="card-img-top diferenciales__card__imagen" alt="areaComercial"
+                                            id="card1">
+                                        <p class="diferenciales__btn diferenciales__btn" id="texto1">Área comercial</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 col-sm-4 mb-2 mb-lg-5   d-flex justify-content-center">
+                                    <div class="card diferenciales__card__box shadow">
+                                        <img src="./imagenes/diferenciales/vittaUrbano/espacioUrbano.png"
+                                            class="card-img-top diferenciales__card__imagen" alt="areaComercial"
+                                            id="card2">
+                                        <p class="diferenciales__btn color" id="texto2">Huertas Urbanas</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 col-sm-4 mb-2 mb-lg-5   mx-4 d-flex justify-content-center">
+                                    <div class="card diferenciales__card__box shadow">
+                                        <img src="./imagenes/diferenciales/circuitoRecreativo.png"
+                                            class="card-img-top diferenciales__card__imagen" alt="areaComercial"
+                                            id="card3">
+                                        <p class="diferenciales__btn" id="texto3">Circuito Deportivo Recreativo</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 col-sm-4 mb-2 mb-lg-5  d-flex justify-content-center">
+                                    <div class="card diferenciales__card__box shadow" id="card5">
+                                        <img src="./imagenes/diferenciales/espaciosComunes.png"
+                                            class="card-img-top diferenciales__card__imagen" alt="areaComercial"
+                                            id="card5">
+                                        <p class="diferenciales__btn" id="texto5">Espacios Comunes</p>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
+
     </section>
 
     <!-- Ubicación -->
-    <section style="min-height: 120vh;" class="ubicacion foto" id="ubicacion">
+    <section style="min-height: 100vh;" class="ubicacion foto" id="ubicacion">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -536,9 +566,9 @@
                 </div>
             </div>
             <div class="row">
-                <div class="d-flex flex-wrap justify-content-around align-items-center">
-                    <div class="col-12 col-md-4 d-flex ">
-                        <div class="col-1 text-center mb-auto">
+                <div class="d-flex flex-wrap justify-content-around align-items-center ubicacion__nuevos__puntos">
+                    <div class="col-12 col-md-6 d-flex ">
+                        <div class="col-1 text-center mb-auto pe-1">
                             <svg width="18" height="38" viewBox="0 0 58 78" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_24_8512)">
@@ -554,16 +584,18 @@
                             </svg>
                         </div>
                         <div>
-                            <h1 class="ubicacion__titulo_principal fs-2">General Lagos</h1>
-                            <h2 class="text-white fs-3">A 22km de Rosario</h2>
+                            <h1 class="ubicacion__titulo_principal fs-2 ms-1">General Lagos</h1>
+                            <h2 class="text-white fs-3 ms-1">A 22km de Rosario</h2>
                             <div>
-                                <p class="text-white ubicacion__parrafo fs-sm fs-lg-md fw-lighter lh-1 pe-3 pe-md-0">Es una comuna a
+                                <p class="text-white ubicacion__parrafo fs-sm fs-lg-md fw-lighter lh-1 pe-3 pe-md-0">Es
+                                    una comuna a
                                     <strong class="fw-bold">22 km de Rosario</strong>, pegada a la ciudad de Pueblo
                                     Esther.
                                     General Lagos registra un crecimiento demográfico de un 30% en los últimos años,
                                     considerada en proceso de conurbanización.
                                 </p>
-                                <p class="text-white ubicacion__parrafo fs-sm fs-lg-md fw-light lh-1 pe-3 pe-md-0">Los amaneceres y
+                                <p class="text-white ubicacion__parrafo fs-sm fs-lg-md fw-light lh-1 pe-3 pe-md-0">Los
+                                    amaneceres y
                                     los atardeceres ofrecen un escenario auditivo
                                     de trinos que se disfruta tanto <strong class="fw-bold">para hacer deportes como
                                         para
@@ -572,37 +604,31 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4 mt-3 ubicacion__card ">
+
+
+                    <div class="col-12 col-md-6 mt-3 ubicacion__card ubicacion__nuevos__circulo  ">
+
                         <iframe class="ubicacion__mapa"
                             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d160353.8557912481!2d-60.62920281852336!3d-33.04393669694055!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa23169217f717ab3!2sVitta%20Barrio%20Privado!5e0!3m2!1ses-419!2sar!4v1638123635496!5m2!1ses-419!2sar"
-                            width="350" height="359" allowfullscreen="" loading="lazy"></iframe>
+                            height="359" allowfullscreen="" loading="lazy"></iframe>
 
                     </div>
                 </div>
             </div>
-            <!-- Puntos ubicacion -->
-            <div class="ubicacion__separator-ribbon__circulo d-none d-xl-block">
-                <div class="ubicacion__content__puntos">
-                    <img src="./imagenes/diferenciales/puntos.svg" alt="logo1" class="ubicacion__puntos img-fluid">
-                </div>
-            </div>
-            <!-- circulo ubicacion -->
-            <div class="ubicacion__separator-ribbon__circulo d-none d-xl-block">
-                <div class="ubicacion__content__circulo">
-                    <img src="./imagenes/ubicacion/circulo.svg" alt="logo1" class="ubicacion__circulo img-fluid">
-                </div>
-            </div>
+
+
         </div>
     </section>
 
-
     <!-- Servicios -->
-    <section style="min-height: 120vh;" class="servicios" id="servicios">
+    <section style="min-height: 100vh;" class="servicios" id="servicios">
+
         <div class="diferenciales__separator-ribbon">
             <div class="diferenciales__content__logo__chico d-none d-lg-block">
                 <img src="./imagenes/home/logoChico.svg" alt="logo1" class="diferenciales__logo__chico__config">
             </div>
         </div>
+
         <div class="servicios__separator-ribbon d-none d-md-block">
             <div class="servicios__content__puntos">
                 <img src="./imagenes/diferenciales/puntos.svg" alt="logo1" class="servicios__puntos img-fluid">
@@ -900,50 +926,61 @@
             </div>
         </div>
 
-       
+
     </section>
 
     <!--Triple impacto  -->
-    <section style="min-height: 100vh;" class="impacto" id="impacto">
+    <section style="min-height: 60vh;" class="impacto" id="impacto">
         <!-- Circulo azul -->
-        <div class="impacto__separator-ribbon d-none d-md-block">
-            <div class="impacto__content__circulo">
-                <img src="./imagenes/tripleImpacto/circulo.svg" alt="logo1" class="impacto__circulo img-fluid">
+        <div class="impacto__logo">
+
+
+            <div class="impacto__separator-ribbon d-none d-md-block">
+                <div class="impacto__content__circulo">
+                    <img src="./imagenes/tripleImpacto/circulo.svg" alt="logo1" class="impacto__circulo img-fluid">
+                </div>
             </div>
-        </div>
-        <!--Puntos  -->
-        <div class="impacto__separator-ribbon d-none d-md-block">
-            <div class="impacto__content__puntos">
-                <img src="./imagenes/diferenciales/puntos.svg" alt="logo1" class="impacto__puntos img-fluid">
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col d-flex flex-wrap justify-content-between align-items-center">
-                    <div class="col-12 impacto__contenido col-md-5 d-flex flex-column">
-                        <h1 class="impacto__titulo">Triple Impacto</h1>
-                        <p class="impacto__separator"></p>
-                        <div class="impacto__textos">
-                            <p class="impacto__parrafo">Buscamos fomentar la revalorización de la tierra, creando
-                                contextos <strong class="fw-bold">donde puedan desarrollarse nuevas comunidades con
-                                    valores.</strong>
-                            </p>
-                            <p class="impacto__parrafo">
-                                Generando fuentes de trabajo, promoviendo hábitos saludables para el cuidado ambiental,
-                                formando comunidades y fomentando los vínculos sociales.
-                            </p>
+
+
+
+            <div class="container">
+
+                <div class="row">
+
+
+
+
+
+                    <div class="col d-flex flex-wrap justify-content-between align-items-center impacto__puntos ">
+                        <div class="col-12 impacto__contenido col-md-5 d-flex flex-column ">
+                            <h1 class="impacto__titulo">Triple Impacto</h1>
+                            <p class="impacto__separator"></p>
+                            <div class="impacto__textos">
+                                <p class="impacto__parrafo">Buscamos fomentar la revalorización de la tierra, creando
+                                    contextos <strong class="fw-bold">donde puedan desarrollarse nuevas comunidades con
+                                        valores.</strong>
+                                </p>
+                                <p class="impacto__parrafo">
+                                    Generando fuentes de trabajo, promoviendo hábitos saludables para el cuidado
+                                    ambiental,
+                                    formando comunidades y fomentando los vínculos sociales.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mt-5 d-flex justify-content-center">
+                            <img src="imagenes/tripleImpacto/imagen.png" alt="impacto"
+                                class="imagen__impacto img-fluid">
                         </div>
                     </div>
-                    <div class="col-12 col-md-4 mt-5 d-flex justify-content-center">
-                        <img src="imagenes/tripleImpacto/imagen.png" alt="impacto" class="imagen__impacto img-fluid">
-                    </div>
                 </div>
+
+
             </div>
         </div>
     </section>
 
     <!-- Nosotros -->
-    <section style="min-height: 60vh;" class="nosotros" id="nosotros">
+    <section style="min-height: 40vh;" class="nosotros" id="nosotros">
         <div class="container">
             <div class="row d-flex justify-content-center align-items-center align-content-center nosotros__contenido">
                 <div class="col-12 col-md-6 text-center my-5 ">

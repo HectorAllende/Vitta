@@ -1,3 +1,8 @@
+// .somos__borde_bottom{
+//     border-bottom: solid 30px $azul;
+//     position: relative;
+//     z-index: 1;
+// }
 
 .somos__separador{
     width: 100%;
@@ -46,6 +51,8 @@
     height: 100%;
     background-color: transparent;
     cursor: pointer;
+    position: relative;
+    z-index: 0;
    
 }
 

@@ -1,12 +1,14 @@
 //Home 
 .home{
-  top:4em;
-
+//   top:4em;
+  height: 100vh;
 
 }
+
+
 .home__fondo1{
     background-color: #101729;    
- 
+
 }
 
 .home__fondo{
@@ -25,7 +27,7 @@
 .home__parrafo1{
     color: $blanco;
     font-weight: $font-weight-light;
-    font-size: 16px;
+   
     text-align: justify;
     line-height: 126%;   
 }
@@ -43,38 +45,6 @@
 
 
 
-.separator-ribbon{
-    width: 100%;
-    overflow: hidden;
-    position: absolute;
-    z-index: 1;
-
-}
-
-.home__content__logo{
-    width: 74%;
-    height: 530px; 
-}
-
-.home__logo__grande__config{
-
-  width: 89%; 
-  margin-top: -3%;
-
-}
-
-
-.home__content__logo__chico{
-    width: 11%;
-    height: 530px; 
-}
-
-.home__logo__chico__config{
-    width: 89%; 
-    margin-top: -3%;
-}
-
-
 .home__titulo__principal_1{
     font-weight: bold;
     color: $amarillo;
@@ -83,49 +53,34 @@
     position: relative;
 }
 
-.home__contenido__principal{
-  margin-left: 7rem;
-
-  margin-top: 20px;
-  position: relative;
-  z-index: 100
-
-}
 
 
 .home__separador__formulario{
-    width: 50%;  
+    width: 50%;
     position: absolute;
     z-index: 2;
-    margin-top: -500px;
+    /* margin-top: -500px; */
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.home__formulario__ubicacion{
-    margin-left: 180px;
-}
 
-.home__separador__formulario__contenido{   
-    padding: 30px;
-    margin-left: -75%;
-    background-color: $amarillo;    
-}
+
 .home__modal{
     color: $amarillo;
-}
-
-.contenido{
-    position: absolute;
 }
 
 .home__input{
     color: $azul;
     border:0px;
     border-bottom: 1px solid $input-linea;
-    font-size: 16px;
-    margin-bottom: 10px;
-    height:50px ;
-    width: 100%;
-    padding: 10px;
+     margin-bottom: 10%px;
+    height:10% ;
+    width: 90%;
+    padding: 2rem;
 
     transition: border-bottom .3s ease;
 
@@ -134,6 +89,8 @@
         outline: none;
     }
 }
+
+
 
 .home__btn{
     background-color: $amarillo;
@@ -200,12 +157,7 @@ textarea::placeholder{
     margin-top: -5px;
 }
 
-.home__separador__contenido{
-    width: 150%;
-    height: 16px;
-    margin-left: -25%;
-    background-color: $amarillo;    
-}
+
 
 
 /* --- MEDIAQUERIES ---  */
@@ -249,11 +201,6 @@ textarea::placeholder{
 
 }
 
-/* Dispositivo XL */
-@media screen and (max-width: 1350px) {
-
-      
-}
 
 
 

@@ -28,6 +28,7 @@
     }
 }
 
+
 .impacto__titulo_principal{
     color:$azul;
     font-weight: bold ;
@@ -75,14 +76,23 @@
 }
 
 .impacto__puntos{
-    width: 120%; 
-    margin-top: 400px;
-    margin-left: 700px;
+    background-image: url(../../imagenes/tripleImpacto/puntos.png);
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: 70%  100%;
 }
+
+.impacto__logo{
+    background-image: url(../../imagenes/tripleImpacto/logoGrande.png);
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: 100%  50%;
+}
+//
 //
 
 .impacto__content__circulo{
-    width: 7%;
+    width: 5%;
 }
 
 .impacto__circulo{

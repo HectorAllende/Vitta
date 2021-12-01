@@ -11,6 +11,9 @@ let btnSomosVittaVittaRio = document.querySelector('#somosVittaRio')
 let btnSomosVittaVittaUrbano = document.querySelector('#somosVittaUrbano')
 
 
+// let menu = document.getAttribute('data-bs-toggle')
+
+
 document.querySelector('.arriba').addEventListener('click', () => {
     window.scrollTo({
         top: 0,
@@ -18,7 +21,41 @@ document.querySelector('.arriba').addEventListener('click', () => {
     })
 })
 
+//
 
+// const observer = new IntersectionObserver((entries)=>{
+//     entries.forEach(entry =>{
+//         const id = entry.target.getAttribute('id')
+//         const menuLink= document.querySelector(`.menu a[href="#${id}"]`)
+
+//         if(entry.isIntersecting){
+//             menuLinks.classList.add("selected")
+//         }else{
+//             menuLink.classList.remove("selected")
+//         }
+      
+//     })
+// })
+
+//
+
+//ver menu links cerrar
+// let menuLinks = document.querySelectorAll('.cerrar a[href^="#"]')
+
+
+
+// menuLinks.forEach(menuLink =>{
+//     menuLink.addEventListener("click", function(){
+//         menu.classList.remove("collapse")
+//     })
+
+//     const hash = menuLink.getAttribute("href")
+//     const target = document.querySelector(hash)
+
+//     if(target){
+//         observer.observe(target)
+//     }
+// })
 
 
 //Botones Diferenciales
@@ -78,6 +115,10 @@ document.querySelector('#somosVittaUrbano').addEventListener('click', ()=>{
     btnSomosVittaVittaRio.src = "./imagenes/somos/vittaRio/rioDesactivado.png"
     btnSomosVittaVittaUrbano.src = src="./imagenes/somos/vittaUrbano/UrbanoAct.png" 
 })
+
+
+
+
 
 
 
