@@ -15,6 +15,14 @@ li{
 
 .enlace{
     color: $blanco;
+    transition: color .3s ease;
+    &:hover{
+        color:$input-hover 
+    }
+}
+
+.header__enlace{
+    color: $blanco;
     text-transform: uppercase;
 
     transition: color .3s ease;
@@ -22,8 +30,9 @@ li{
         color:$input-hover 
     }
     &:focus{
-        color:$input-hover 
-    }    
+        color:$input-hover;
+        border-bottom: $amarillo 2px solid;
+    } 
 }
 
 

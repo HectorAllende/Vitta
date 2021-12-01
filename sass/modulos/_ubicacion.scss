@@ -31,21 +31,14 @@
 
 .ubicacion__titulo_principal{
     color:$amarillo;   
-    line-height: 122%;;
+  
 
 }
 
-.ubicacion__titulo_secundario{
-    color: $blanco;
-    line-height: 122%;
-    font-size: 30px;
-}
+
 
 .ubicacion__parrafo{ 
-    text-align: justify;
-
-
-      
+    text-align: justify;     
 }
 
 
@@ -56,7 +49,13 @@
 
 }
 
+.ubicacion__persona__col{
+    background-image: url(../../imagenes/ubicacion/persona.png);
+    background-size: cover;
+    background-position: left;
+  
 
+}
 
 .ubicacion__mapa{
     border: 5px solid $amarillo;
@@ -116,35 +115,16 @@
 }
 
 
-
-
 // Persona
 
-.ubicacion__content__persona{
-    width: 80%;
-}
 
-.ubicacion__persona{
-    width: 20%; 
-    margin-top: -300px;
-    margin-left: 1128px;
- 
-}
 
 /* Dispositivo sm */
 @media screen and (max-width: 492px) {
     .ubicacion__titulo{
         font-size: 25px;  
     }
-    .ubicacion__titulo_principal{
-
-        font-size: 25px;
-    }
-    
-    .ubicacion__titulo_secundario{
-
-        font-size: 20px;
-    }
+  
 
     .ubicacion__separator{
         text-align: start;
@@ -166,15 +146,12 @@
         width: 300px;
 
     }
-    
-
   
  
 }
 
 /* Dispositivo MD */
 @media screen and (max-width: 768px) {
-
 
     .separator{
         margin-left: -1rem;
@@ -193,9 +170,7 @@
 
 /* Dispositivo XL */
 @media screen and (max-width: 1350px) {
-    .ubicacion__display{
-        display: none;
-    }
+  
 }
 
 

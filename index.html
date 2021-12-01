@@ -36,19 +36,22 @@
             <div class="collapse navbar-collapse color" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto align-items-center rounded ">
                     <li class="nav-item">
-                        <a class="nav-link active enlace arriba" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active header__enlace arriba" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link enlace" href="#somos">Somos</a>
+                        <a class="nav-link active header__enlace arriba" aria-current="page" href="#somos">Somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link enlace" href="#diferenciales">Diferenciales</a>
+                        <a class="nav-link enlace header__enlace" href="#somos">Somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link enlace" href="#ubicacion">Ubicación</a>
+                        <a class="nav-link enlace header__enlace" href="#diferenciales">Diferenciales</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link enlace" href="#servicios">Servicios</a>
+                        <a class="nav-link enlace header__enlace" href="#ubicacion">Ubicación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link enlace header__enlace" href="#servicios">Servicios</a>
                     </li>
                 </ul>
                 <div class="d-flex flex-row justify-content-center align-items-center p-3 ">
@@ -77,12 +80,12 @@
         </div>
     </nav>
 
-    <!-- Home 1 nuevo -->
-    <section class="home home__fondo1" id="home">
-        <div class="container-fluid home_borde ">
-            <div class="row home_principal">
+    <!-- Home  -->
+    <section class="home " id="home">
+        <div class="container-fluid home_borde  ">
+            <div class="row home_principal home__fondo1">
                 <!-- Titulos principales -->
-                <div class="col-12 col-xl-6 mb-5 p-5 d-flex flex-column justify-content-center home__fondo">
+                <div class="col-12 col-xl-6 mb-5 p-5 d-flex flex-column justify-content-center  home__fondo">
                     <div class="col home__titulo__principal_nuevo fw-bold ps-5">
                         <h1 class="display-4 fw-bold">Viví tu</h1>
                         <h1 class="display-4 fw-bold">mejor versión</h1>
@@ -389,7 +392,7 @@
                         <div class="card diferenciales__card__box shadow">
                             <img src="./imagenes/diferenciales/guarderiaNautica.png"
                                 class="card-img-top diferenciales__card__imagen" alt="areaComercial" id="card2">
-                            <p class="diferenciales__btn color" id="texto2">Guardería Nautica</p>
+                            <p class="diferenciales__btn color" id="texto2">Guardería Náutica</p>
 
                         </div>
                     </div>
@@ -456,7 +459,7 @@
                         <div class="card diferenciales__card__box shadow">
                             <img src="./imagenes/diferenciales/relax&bosqueZen.png"
                                 class="card-img-top diferenciales__card__imagen" alt="areaComercial" id="card4">
-                            <p class="diferenciales__btn" id="texto4">Zona Relax & Bosque Zen</p>
+                            <p class="diferenciales__btn" id="texto4">Área Zen</p>
                         </div>
                     </div>
                     <div class="col-6 col-md-4 mb-1 mb-sm-2 d-flex justify-content-center">
@@ -530,55 +533,53 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h1 class="ubicacion__titulo fs-1 fw-bold">Ubicación</h1> 
+                    <h1 class="ubicacion__titulo fs-1 fw-bold">Ubicación</h1>
                     <p class="ubicacion__separator"></p>
-                </div>                  
                 </div>
             </div>
             <div class="row">
-                <div class="d-flex flex-wrap justify-content-around align-items-center">            
-                     
-                        <div class="col-12 col-md-4 d-flex ">
-                            <div class="col-1 text-center mb-auto">
-                                <svg width="18" height="38" viewBox="0 0 58 78" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_24_8512)">
-                                    <path d="M29.28 9.84006e-05C50.6 0.190098 64.56 22.8201 54.79 41.8501C48.78 53.5701 40.2 63.6701 32.89 74.5701C30.53 78.0901 27.8 78.4601 25.3 74.7501C17.8 63.6501 8.98003 53.3801 2.98003 41.3401C-6.52997 22.2801 7.93003 -0.179902 29.28 9.84006e-05ZM41.05 29.6201C41.38 22.9101 35.92 17.1001 29.19 17.0001C22.76 16.9001 17.29 22.0501 16.98 28.4701C16.66 35.1701 22.14 41.0001 28.84 41.1001C35.21 41.2001 40.74 36.0001 41.05 29.6201Z" fill="white"/>
-                                    </g>
-                                    <defs>
+                <div class="d-flex flex-wrap justify-content-around align-items-center">
+                    <div class="col-12 col-md-4 d-flex ">
+                        <div class="col-1 text-center mb-auto">
+                            <svg width="18" height="38" viewBox="0 0 58 78" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_24_8512)">
+                                    <path
+                                        d="M29.28 9.84006e-05C50.6 0.190098 64.56 22.8201 54.79 41.8501C48.78 53.5701 40.2 63.6701 32.89 74.5701C30.53 78.0901 27.8 78.4601 25.3 74.7501C17.8 63.6501 8.98003 53.3801 2.98003 41.3401C-6.52997 22.2801 7.93003 -0.179902 29.28 9.84006e-05ZM41.05 29.6201C41.38 22.9101 35.92 17.1001 29.19 17.0001C22.76 16.9001 17.29 22.0501 16.98 28.4701C16.66 35.1701 22.14 41.0001 28.84 41.1001C35.21 41.2001 40.74 36.0001 41.05 29.6201Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
                                     <clipPath id="clip0_24_8512">
-                                    <rect width="57.97" height="77.38" fill="white"/>
+                                        <rect width="57.97" height="77.38" fill="white" />
                                     </clipPath>
-                                    </defs>
-                                </svg>                                
-                            </div>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div>
+                            <h1 class="ubicacion__titulo_principal fs-2">General Lagos</h1>
+                            <h2 class="text-white fs-3">A 22km de Rosario</h2>
                             <div>
-                                <h1 class="ubicacion__titulo_principal">General Lagos</h1>
-                                <h2 class="ubicacion__titulo_secundario">A 22km de Rosario</h2>
-                                <div>
-                                    <p class="text-white ubicacion__parrafo fs-sm fs-md-md fw-lighter lh-1">Es una comuna a <strong class="fw-bold">22 km de
-                                            Rosario</strong>, pegada a la ciudad de Pueblo Esther.
-                                        General Lagos registra un crecimiento demográfico de un 30% en los últimos años,
-                                        considerada en proceso de conurbanización.
-                                    </p>
-                                    <p class="text-white ubicacion__parrafo fs-sm fs-md-md fw-light lh-1">Los amaneceres y los atardeceres ofrecen un escenario auditivo
-                                        de trinos que se disfruta tanto <strong class="fw-bold">para hacer deportes como para
-                                            cualquier actividad de ocio o recreación.</strong>
-                                    </p>
-                            </div>
+                                <p class="text-white ubicacion__parrafo fs-sm fs-lg-md fw-lighter lh-1 pe-3 pe-md-0">Es una comuna a
+                                    <strong class="fw-bold">22 km de Rosario</strong>, pegada a la ciudad de Pueblo
+                                    Esther.
+                                    General Lagos registra un crecimiento demográfico de un 30% en los últimos años,
+                                    considerada en proceso de conurbanización.
+                                </p>
+                                <p class="text-white ubicacion__parrafo fs-sm fs-lg-md fw-light lh-1 pe-3 pe-md-0">Los amaneceres y
+                                    los atardeceres ofrecen un escenario auditivo
+                                    de trinos que se disfruta tanto <strong class="fw-bold">para hacer deportes como
+                                        para
+                                        cualquier actividad de ocio o recreación.</strong>
+                                </p>
                             </div>
                         </div>
-           
-
+                    </div>
                     <div class="col-12 col-md-4 mt-3 ubicacion__card ">
                         <iframe class="ubicacion__mapa"
                             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d160353.8557912481!2d-60.62920281852336!3d-33.04393669694055!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa23169217f717ab3!2sVitta%20Barrio%20Privado!5e0!3m2!1ses-419!2sar!4v1638123635496!5m2!1ses-419!2sar"
                             width="350" height="359" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
 
-                    <div class="col-1 persona">
-                        <img src="./imagenes/servicios/persona.svg" alt="logo1" class="ubicacion__persona img-fluid">
                     </div>
-
                 </div>
             </div>
             <!-- Puntos ubicacion -->
@@ -593,15 +594,9 @@
                     <img src="./imagenes/ubicacion/circulo.svg" alt="logo1" class="ubicacion__circulo img-fluid">
                 </div>
             </div>
-      
-        </div>
-        <!-- Persona -->
-        <div class="ubicacion__separator-ribbon__circulo ubicacion__display">
-            <div class="ubicacion__content__persona">
-                
-            </div>
         </div>
     </section>
+
 
     <!-- Servicios -->
     <section style="min-height: 120vh;" class="servicios" id="servicios">
@@ -906,6 +901,8 @@
                 </div>
             </div>
         </div>
+
+       
     </section>
 
     <!--Triple impacto  -->

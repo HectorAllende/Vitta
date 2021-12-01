@@ -13,14 +13,23 @@ li {
 
 .enlace {
   color: #FFFFFF;
-  text-transform: uppercase;
   transition: color 0.3s ease;
 }
 .enlace:hover {
   color: #B0B3B8;
 }
-.enlace:focus {
+
+.header__enlace {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+.header__enlace:hover {
   color: #B0B3B8;
+}
+.header__enlace:focus {
+  color: #B0B3B8;
+  border-bottom: #d3d92e 2px solid;
 }
 
 .header__boton__menu {
@@ -104,7 +113,13 @@ li {
 }
 
 .home__fondo1 {
-  background-color: #191D2D;
+  background-color: #101729;
+}
+
+.home__fondo {
+  background-image: url(../../imagenes/home/img-principal.png);
+  background-size: 90%;
+  background-repeat: no-repeat;
 }
 
 .home__titulo__principal_nuevo {
@@ -127,12 +142,6 @@ li {
 .home__contenido__principal1 {
   color: #d3d92e;
   line-height: 122%;
-}
-
-.home__fondo {
-  background-image: url(../../imagenes/home/img-principal.png);
-  background-size: 90%;
-  background-repeat: no-repeat;
 }
 
 .separator-ribbon {
@@ -293,10 +302,6 @@ textarea::placeholder {
     margin-right: -4px;
     text-align: center;
   }
-
-  h1.home__titulo__principal_1 {
-    font-size: 30px;
-  }
 }
 @media (max-width: 576px) {
   .home__btn_cel {
@@ -304,12 +309,12 @@ textarea::placeholder {
   }
 }
 /* Dispositivo MD */
-@media screen and (max-width: 768px) {
-  .home__separador__contenido {
-    height: 10px;
+/* Dispositivo XL */
+@media screen and (max-width: 1200px) {
+  .home__fondo {
+    background-size: 50%;
   }
 }
-/* Dispositivo XL */
 /* Dispositivo XL */
 .somos__separador {
   width: 100%;
@@ -562,13 +567,6 @@ section.diferencialesVittaUrbano {
 
 .ubicacion__titulo_principal {
   color: #d3d92e;
-  line-height: 122%;
-}
-
-.ubicacion__titulo_secundario {
-  color: #FFFFFF;
-  line-height: 122%;
-  font-size: 30px;
 }
 
 .ubicacion__parrafo {
@@ -578,6 +576,12 @@ section.diferencialesVittaUrbano {
 .ubicacion__icono {
   margin-top: 5rem;
   margin-left: 5rem;
+}
+
+.ubicacion__persona__col {
+  background-image: url(../../imagenes/ubicacion/persona.png);
+  background-size: cover;
+  background-position: left;
 }
 
 .ubicacion__mapa {
@@ -626,28 +630,10 @@ section.diferencialesVittaUrbano {
   margin-left: 630px;
 }
 
-.ubicacion__content__persona {
-  width: 80%;
-}
-
-.ubicacion__persona {
-  width: 20%;
-  margin-top: -300px;
-  margin-left: 1128px;
-}
-
 /* Dispositivo sm */
 @media screen and (max-width: 492px) {
   .ubicacion__titulo {
     font-size: 25px;
-  }
-
-  .ubicacion__titulo_principal {
-    font-size: 25px;
-  }
-
-  .ubicacion__titulo_secundario {
-    font-size: 20px;
   }
 
   .ubicacion__separator {
@@ -681,11 +667,6 @@ section.diferencialesVittaUrbano {
 }
 /* Dispositivo LG */
 /* Dispositivo XL */
-@media screen and (max-width: 1350px) {
-  .ubicacion__display {
-    display: none;
-  }
-}
 .servicios {
   background-color: #181E2E;
 }
