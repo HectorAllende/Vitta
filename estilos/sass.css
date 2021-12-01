@@ -29,7 +29,7 @@ li {
 }
 .header__enlace:focus {
   color: #B0B3B8;
-  border-bottom: #d3d92e 2px solid;
+  border-bottom: #d3d92e 3px solid;
 }
 
 .header__boton__menu {
