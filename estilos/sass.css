@@ -110,14 +110,27 @@ li {
 
 .home {
   height: 100vh;
-  position: relative;
 }
 
-.home__fondo_principal {
-  background-image: url(../../imagenes/home/img-principal.png);
-  background-size: 80%;
-  background-repeat: no-repeat;
-  background-position: 0% 0%;
+.home__carrusel__index {
+  position: absolute;
+  left: 40%;
+  z-index: 0;
+}
+
+.home__contenido__principal {
+  position: absolute;
+  z-index: 2;
+}
+
+.home__imagen {
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.home__index {
+  position: relative;
 }
 
 .home__titulo__principal_nuevo {
@@ -150,10 +163,10 @@ li {
 }
 
 .home__separador__formulario {
-  width: 50%;
+  width: 80%;
   position: absolute;
   z-index: 2;
-  /* margin-top: -500px; */
+  left: 30%;
   top: 0;
   bottom: 0;
   display: flex;
@@ -502,21 +515,6 @@ section.diferencialesVittaUrbano {
   z-index: 1;
 }
 
-.ubicacion__separator {
-  text-align: start;
-  padding-left: -1.25rem;
-  margin-left: -1.25rem;
-  position: absolute;
-}
-.ubicacion__separator::after {
-  position: absolute;
-  content: "";
-  height: 1.25rem;
-  width: 13rem;
-  background-color: #d3d92e;
-  top: -1.5em;
-}
-
 .ubicacion__titulo_principal {
   color: #d3d92e;
   font-size: 3.5rem;
@@ -571,7 +569,6 @@ section.diferencialesVittaUrbano {
 .ubicacion__mapa {
   border-top: 0px;
   border-left: 0px;
-  border: 100;
   width: 35rem;
   height: 35rem;
 }
@@ -584,53 +581,13 @@ section.diferencialesVittaUrbano {
   border-radius: 20px;
 }
 
-.ubicacion__separator-ribbon__puntos {
-  width: 100%;
-  overflow: hidden;
-  position: absolute;
-  z-index: 1;
-}
-
-.ubicacion__content__puntos {
-  width: 90%;
-}
-
-.ubicacion__puntos {
-  width: 30%;
-  margin-top: -680px;
-  margin-left: 800px;
-}
-
 /* Dispositivo sm */
 @media screen and (max-width: 492px) {
   .ubicacion__titulo {
     font-size: 25px;
   }
-
-  .ubicacion__separator {
-    text-align: start;
-    padding-left: -1.25rem;
-    margin-left: -1.25rem;
-    position: absolute;
-  }
-  .ubicacion__separator::after {
-    position: absolute;
-    content: "";
-    height: 0.7rem;
-    width: 8rem;
-    background-color: #d3d92e;
-    top: -1.5em;
-  }
 }
 /* Dispositivo MD */
-@media screen and (max-width: 768px) {
-  .separator {
-    margin-left: -1rem;
-  }
-  .separator::after {
-    width: 12rem;
-  }
-}
 /* Dispositivo LG */
 /* Dispositivo XL */
 .servicios {
