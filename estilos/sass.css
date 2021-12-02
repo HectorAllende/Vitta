@@ -110,25 +110,14 @@ li {
 
 .home {
   height: 100vh;
+  position: relative;
 }
 
-.home__fondo1 {
-  background-color: #101729;
-}
-
-.home__fondo {
+.home__fondo_principal {
   background-image: url(../../imagenes/home/img-principal.png);
-  background-size: 90%;
+  background-size: 80%;
   background-repeat: no-repeat;
-}
-
-.home__logo__principal {
-  background-image: url(../../imagenes/home/pipa.png);
-  background-size: 60%;
-  background-repeat: no-repeat;
-  background-position: 40% 50%;
-  position: absolute;
-  z-index: 2;
+  background-position: 0% 0%;
 }
 
 .home__titulo__principal_nuevo {
@@ -904,7 +893,7 @@ section.diferencialesVittaUrbano {
 
 .fotter__derechos {
   color: #FFFFFF;
-  font-size: 12px;
+  font-size: 1rem;
 }
 
 .footer__logo {

@@ -2,36 +2,33 @@
 .home{
 //   top:4em;
   height: 100vh;
-  position: relative;
 }
 
 .home__fondo1{
-    // background-color: #101729;    
+    background-color: #101729;    
 }
 
-.home__fondo_principal{
+.home__fondo{
     background-image: url(../../imagenes/home/img-principal.png);
-    background-size: 80%;
+    background-size: 90%;
     background-repeat: no-repeat;
-    background-position: 0% 0%;
 
 }
 
-// .home__logo__principal{
-//     background-image: url(../../imagenes/home/pipa.png);
-//     background-size: 60%;
-//     background-repeat: no-repeat;
-//     background-position: 40% 50%;
+.home__logo__principal{
+    background-image: url(../../imagenes/home/pipa.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: 40% 50%;
+    position: absolute;
+    z-index: 2;
+}
 
- 
+
+// .home__contenido__index{
+//     position: absolute;
+//     z-index: 1;
 // }
-
-
-
-
-.home__contenido__index{
-    
-}
 
 // .home__carrusel__index{
 //     position: absolute;
@@ -39,7 +36,7 @@
 // }
 
 // .home__index{
-//     position: absolute;
+//     position: relative;
 // }
 
 
@@ -221,15 +218,5 @@ textarea::placeholder{
     }
 
 }
-
-
-
-
-
-
-
-
-
-
 
 
