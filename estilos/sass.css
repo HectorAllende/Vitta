@@ -675,7 +675,8 @@ section.diferencialesVittaUrbano {
 .servicios__texto__card {
   color: #FFFFFF;
   font-weight: lighter;
-  font-size: 14px;
+  font-size: 1.5rem;
+  text-align: start;
 }
 
 .servicios__imagen {
@@ -688,27 +689,31 @@ section.diferencialesVittaUrbano {
 }
 
 .servicio__svg {
-  width: 50px;
-  height: 50px;
+  width: 80%;
+  height: 80%;
   margin-left: 40px;
   margin-top: 15px;
 }
 
-.servicios__separator-ribbon {
-  width: 100%;
-  overflow: hidden;
-  position: absolute;
-  z-index: 1;
+.servicio__circulo {
+  background-image: url(../../imagenes/servicios/circulo.png);
+  background-size: 10%;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
 }
 
-.servicios__content__puntos {
-  width: 20%;
+.servicio__puntos {
+  background-image: url(../../imagenes/servicios/puntos.png);
+  background-size: 8%;
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
 }
 
-.servicios__puntos {
-  width: 120%;
-  margin-top: 500px;
-  margin-left: -190px;
+.servicio__logo {
+  background-image: url(../../imagenes/servicios/logo.png);
+  background-size: 13%;
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
 }
 
 @media (max-width: 576px) {
@@ -814,6 +819,13 @@ section.diferencialesVittaUrbano {
   background-size: 20%;
   background-repeat: no-repeat;
   background-position: 100% 50%;
+}
+
+.impacto__circulo_azul {
+  background-image: url(../../imagenes/tripleImpacto/logoAzul.png);
+  background-size: 4%;
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
 }
 
 .impacto__content__circulo {
