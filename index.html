@@ -79,10 +79,14 @@
 
     <!-- Home  -->
     <section class="home " id="home">
-        <div class="container-fluid home_borde h-100">
-            <div class="row home_principal home__fondo1 h-100">
+
+
+
+        <div class="container-fluid home_borde h-100 home__index ">
+
+            <div class="row  home__fondo1 h-100 home__logo__principal">
                 <!--Contenido Principal -->
-                <div class="col-12 col-xl-6 mb-5 p-5 d-flex flex-column justify-content-center  home__fondo">
+                <div class="col-12 col-xl-6 mb-5 p-5 d-flex flex-column justify-content-center home__contenido__index">
 
                     <div class="container">
                         <div class="row d-flex flex-column justify-content-center align-items-center">
@@ -202,8 +206,9 @@
 
 
                 </div>
+
                 <!-- Carrusel -->
-                <div class="col-12 col-xl-6 g-0 home_carrusel1 h-100">
+                <div class="col-12 col-xl-6 g-0 home_carrusel1 h-100 home__carrusel__index">
                     <!-- Contenido Carrusel -->
                     <div id="carouselExampleCaptions" class="carousel slide h-100" data-bs-ride="carousel">
                         <div class="carousel-indicators h-100">
@@ -292,8 +297,12 @@
 
                     </div>
                 </div>
+
             </div>
+
         </div>
+
+
     </section>
 
 
@@ -393,8 +402,9 @@
     </section>
 
 
+
     <!-- Diferenciales Vitta -->
-    <section id="diferencialesVitta" class="diferencialesVitta d-block diferenciales__circulo ">
+    <section id="diferencialesVitta" class="diferencialesVitta d-block diferenciales__circulo pt-1 ">
 
         <div class="diferenciales__puntos__nuevos">
             <div class="diferenciales__logo">
@@ -449,8 +459,10 @@
 
     </section>
 
+
+
     <!-- Diferenciales VittaRio -->
-    <section id="diferencialesVittaRio" class=" diferencialesVittaRio d-none diferenciales__circulo">
+    <section id="diferencialesVittaRio" class=" diferencialesVittaRio d-none diferenciales__circulo  pt-1">
         <div class="diferenciales__puntos__nuevos">
             <div class="diferenciales__logo">
                 <div class="container vitta_card1">
@@ -503,7 +515,7 @@
 
 
     <!-- Diferenciales VittaUrbano -->
-    <section id="diferencialesVittaUrbano" class=" diferencialesVittaUrbano d-none diferenciales__circulo">
+    <section id="diferencialesVittaUrbano" class=" diferencialesVittaUrbano d-none diferenciales__circulo  pt-1">
         <div class="diferenciales__puntos__nuevos">
             <div class="diferenciales__logo">
                 <div class="container vitta_card1">
@@ -557,19 +569,29 @@
     </section>
 
     <!-- Ubicación -->
-    <section style="min-height: 100vh;" class="ubicacion foto" id="ubicacion">
-        <div class="container">
+
+
+
+
+    <section style="min-height: 100vh;" class="ubicacion foto ubicacion__persona pb-5 mt-5" id="ubicacion">
+
+        <div class="container  ">
+
+            <!-- Titulo -->
             <div class="row">
                 <div class="col">
                     <h1 class="ubicacion__titulo fs-1 fw-bold">Ubicación</h1>
                     <p class="ubicacion__separator"></p>
                 </div>
             </div>
-            <div class="row">
-                <div class="d-flex flex-wrap justify-content-around align-items-center ubicacion__nuevos__puntos">
-                    <div class="col-12 col-md-6 d-flex ">
-                        <div class="col-1 text-center mb-auto pe-1">
-                            <svg width="18" height="38" viewBox="0 0 58 78" fill="none"
+            <div class="row h-100 pb-4">
+
+                <div class="d-flex flex-wrap align-items-center h-100  ">
+                    <!-- COntenido -->
+                    <div class="col-12 col-lg-6 d-flex mt-5 h-100">
+                        <!-- Logo Ubicacion -->
+                        <div class="col-1 text-center mb-auto mt-5 pe-1">
+                            <svg width="28" height="48" viewBox="0 0 58 78" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_24_8512)">
                                     <path
@@ -583,18 +605,27 @@
                                 </defs>
                             </svg>
                         </div>
-                        <div>
-                            <h1 class="ubicacion__titulo_principal fs-2 ms-1">General Lagos</h1>
-                            <h2 class="text-white fs-3 ms-1">A 22km de Rosario</h2>
-                            <div>
-                                <p class="text-white ubicacion__parrafo fs-sm fs-lg-md fw-lighter lh-1 pe-3 pe-md-0">Es
+                        <!-- Texto -->
+                        <div class="mt-5">
+
+                            <div class="d-flex flex-column">
+                                <h1 class="ubicacion__titulo_principal ms-1">General Lagos</h1>
+
+                                <h2 class="text-white fs-3 ms-1 mt-3">A 22km de Rosario</h2>
+                            </div>
+
+
+                            <div class="col-10 d-flex flex-column mt-5">
+
+                                <p class="text-white ubicacion__parrafo fw-lighter lh-1 pe-3 pe-md-0">Es
                                     una comuna a
                                     <strong class="fw-bold">22 km de Rosario</strong>, pegada a la ciudad de Pueblo
                                     Esther.
                                     General Lagos registra un crecimiento demográfico de un 30% en los últimos años,
                                     considerada en proceso de conurbanización.
                                 </p>
-                                <p class="text-white ubicacion__parrafo fs-sm fs-lg-md fw-light lh-1 pe-3 pe-md-0">Los
+
+                                <p class="text-white ubicacion__parrafo  fw-light lh-1 pe-3 pe-md-0">Los
                                     amaneceres y
                                     los atardeceres ofrecen un escenario auditivo
                                     de trinos que se disfruta tanto <strong class="fw-bold">para hacer deportes como
@@ -605,29 +636,47 @@
                         </div>
                     </div>
 
+                    <!-- Mapa -->
+                    <div class="col-12 col-lg-6 mt-5 ubicacion__card h-100 p-5 ">
 
-                    <div class="col-12 col-md-6 mt-3 ubicacion__card ubicacion__nuevos__circulo  ">
+                        <div class="ubicacion__borde">
 
-                        <iframe class="ubicacion__mapa"
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d160353.8557912481!2d-60.62920281852336!3d-33.04393669694055!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa23169217f717ab3!2sVitta%20Barrio%20Privado!5e0!3m2!1ses-419!2sar!4v1638123635496!5m2!1ses-419!2sar"
-                            height="359" allowfullscreen="" loading="lazy"></iframe>
+
+                            <div class="ubicacion__nuevos__puntos">
+
+
+                                <div class="ubicacion__nuevos__circulo_mapa_borrar">
+                                  
+                                        <iframe class="ubicacion__mapa p-5"
+                                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d160353.8557912481!2d-60.62920281852336!3d-33.04393669694055!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa23169217f717ab3!2sVitta%20Barrio%20Privado!5e0!3m2!1ses-419!2sar!4v1638123635496!5m2!1ses-419!2sar"
+                                        allowfullscreen="" loading="lazy"></iframe>
+
+                               
+                              
+                                </div>
+                            </div>
+                        </div>
+
 
                     </div>
+
                 </div>
+
             </div>
-
-
         </div>
     </section>
+
+
+
 
     <!-- Servicios -->
     <section style="min-height: 100vh;" class="servicios" id="servicios">
 
-        <div class="diferenciales__separator-ribbon">
+        <!-- <div class="diferenciales__separator-ribbon">
             <div class="diferenciales__content__logo__chico d-none d-lg-block">
                 <img src="./imagenes/home/logoChico.svg" alt="logo1" class="diferenciales__logo__chico__config">
             </div>
-        </div>
+        </div> -->
 
         <div class="servicios__separator-ribbon d-none d-md-block">
             <div class="servicios__content__puntos">

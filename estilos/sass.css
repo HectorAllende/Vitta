@@ -122,6 +122,15 @@ li {
   background-repeat: no-repeat;
 }
 
+.home__logo__principal {
+  background-image: url(../../imagenes/home/pipa.png);
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: 40% 50%;
+  position: absolute;
+  z-index: 2;
+}
+
 .home__titulo__principal_nuevo {
   color: #d3d92e;
   line-height: 122%;
@@ -390,9 +399,9 @@ section.diferencialesVittaUrbano {
 
 .diferenciales__puntos__nuevos {
   background-image: url(../../imagenes/diferenciales/puntos.png);
-  background-size: 20%;
+  background-size: 19%;
   background-repeat: no-repeat;
-  background-position: 0% 100%;
+  background-position: 0% 50%;
 }
 
 .diferenciales__circulo {
@@ -411,8 +420,8 @@ section.diferencialesVittaUrbano {
 
 .diferenciales__logo__chico {
   background-image: url(../../imagenes/diferenciales/logo.png);
-  background-size: 10%;
-  background-position: 5% -10%;
+  background-size: 11%;
+  background-position: 0% 0%;
   background-repeat: no-repeat;
   position: relative;
 }
@@ -521,10 +530,13 @@ section.diferencialesVittaUrbano {
 
 .ubicacion__titulo_principal {
   color: #d3d92e;
+  font-size: 3.5rem;
+  font-weight: bold;
 }
 
 .ubicacion__parrafo {
   text-align: justify;
+  font-size: 1.4rem;
 }
 
 .ubicacion__icono {
@@ -532,31 +544,47 @@ section.diferencialesVittaUrbano {
   margin-left: 5rem;
 }
 
-.ubicacion__persona__col {
+.ubicacion__persona {
   background-image: url(../../imagenes/ubicacion/persona.png);
-  background-size: cover;
-  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position: 100% 100%;
 }
 
 .ubicacion__nuevos__puntos {
   background-image: url(../../imagenes/ubicacion/puntos.png);
-  background-size: 20%;
-  background-position: right top;
+  background-size: 40%;
+  background-position: 100% 0%;
   background-repeat: no-repeat;
 }
 
 .ubicacion__nuevos__circulo {
   background-image: url(../../imagenes/ubicacion/circulo.png);
-  background-size: 30%;
-  background-position: left bottom;
+  background-size: 8%;
+  background-position: 59% 100%;
+  background-repeat: no-repeat;
+}
+
+.ubicacion__nuevos__circulo_mapa_borrar {
+  background-image: url(../../imagenes/ubicacion/circulo.png);
+  background-size: 20%;
+  background-position: 2% 97%;
+  background-repeat: no-repeat;
+}
+
+.ubicacion__borde {
+  background-image: url(../../imagenes/ubicacion/borde.png);
+  background-size: 80%;
+  background-position: 75% 60%;
   background-repeat: no-repeat;
 }
 
 .ubicacion__mapa {
-  border: 5px solid #d3d92e;
   border-top: 0px;
   border-left: 0px;
-  border-radius: 20px;
+  border: 100;
+  width: 35rem;
+  height: 35rem;
 }
 
 .ubicacion__card {
@@ -564,6 +592,7 @@ section.diferencialesVittaUrbano {
   align-content: center;
   align-items: center;
   justify-content: center;
+  border-radius: 20px;
 }
 
 .ubicacion__separator-ribbon__puntos {
@@ -581,21 +610,6 @@ section.diferencialesVittaUrbano {
   width: 30%;
   margin-top: -680px;
   margin-left: 800px;
-}
-
-.ubicacion__separator-ribbon__puntos {
-  position: absolute;
-  z-index: 1;
-}
-
-.ubicacion__content__circulo {
-  width: 80%;
-}
-
-.ubicacion__circulo {
-  width: 15%;
-  margin-top: -110px;
-  margin-left: 630px;
 }
 
 /* Dispositivo sm */

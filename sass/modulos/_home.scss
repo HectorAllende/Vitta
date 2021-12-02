@@ -5,7 +5,6 @@
 
 }
 
-
 .home__fondo1{
     background-color: #101729;    
 
@@ -17,6 +16,31 @@
     background-repeat: no-repeat;
 
 }
+
+.home__logo__principal{
+    background-image: url(../../imagenes/home/pipa.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: 40% 50%;
+    position: absolute;
+    z-index: 2;
+}
+
+
+// .home__contenido__index{
+//     position: absolute;
+//     z-index: 1;
+// }
+
+// .home__carrusel__index{
+//     position: absolute;
+//     z-index: 0;
+// }
+
+// .home__index{
+//     position: relative;
+// }
+
 
 
 .home__titulo__principal_nuevo{
