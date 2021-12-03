@@ -77,42 +77,36 @@
             </div>
         </div>
     </nav>
-
     <!-- Home  -->
     <section class="home " id="home">
-
         <div class="h-100 fondo__chico ">
             <div class="home_borde h-100 home__index ">
-
                 <div class="h-100">   
-
-                        <div class="">
-                            <img src="./imagenes/home/img-principal.png" class="home__imagen img-fluid" alt="imagen">
-                        </div>
-
+                    <div class="">
+                        <img src="./imagenes/home/img-principal.png" class="home__imagen img-fluid" alt="imagen">
+                    </div>
                         <!--Contenido Principal -->
-                        <div class="col-12 col-xxl-6 mb-5 p-5 d-flex flex-column justify-content-center home__contenido__principal h-100">
+                    <div class="col-12 col-xl-6 mb-5 p-0 p-xl-5 d-flex flex-column justify-content-center home__contenido__principal h-100">
                             <div class="container">
                                 <div class="row d-flex flex-column justify-content-center align-items-center">
                                     <!-- Titulo principal -->
                                     <div
-                                        class="col-9 d-flex flex-column justify-content-center align-content-center py-5 home__titulo__principal_nuevo fw-bold">
-                                        <h1 class="display-1 fw-bold">Viví tu</h1>
-                                        <h1 class="display-1 fw-bold">mejor versión</h1>
+                                        class="col-9 d-flex flex-column justify-content-center align-content-center py-2 py-xxl-5">
+                                        <h1 class="home__titulo__principal_nuevo">Viví tu</h1>
+                                        <h1 class="home__titulo__principal_nuevo">mejor versión</h1>
                                     </div>
 
                                     <!-- Logos -->
-                                    <div class="col-9  py-4 d-none d-md-block">
+                                    <div class="col-6  col-xxl-9  py-4 d-none d-md-block">
                                         <div class="d-flex justify-content-between ">
-                                            <img src="./imagenes/home/vitta_vitta.png" alt="vitta" class="img-fluid">
-                                            <img src="./imagenes/home/vitta_rio.png" alt="vittaRio" class="img-fluid">
-                                            <img src="./imagenes/home/vitta_urbano.png" alt="vittaUrbano" 
-                                                class="img-fluid">
+                                            <img src="./imagenes/home/vitta_vitta.png" alt="vitta" class="img-fluid home__img__vitta">
+                                            <img src="./imagenes/home/vitta_rio.png" alt="vittaRio" class="img-fluid home__img__vitta ">
+                                            <img src="./imagenes/home/vitta_urbano.png" alt="vittaUrbano" class="img-fluid home__img__vitta">
                                         </div>
                                     </div>
 
                                     <!-- Texto -->
-                                    <div class="col-4 col-xl-9 mt-4 mt-sm-1 py-5">
+                                    <div class="col-9 mt-2 mt-xxl-4 mt-sm-1 py-0 py-xxl-5">
                                         <p class="home__parrafo1">A través del diseño de sus áreas comunes,
                                             equipamiento, mobiliarios y diversos espacios temáticos, Vitta <strong
                                                 class="fw-bold"> fusiona la vida urbana cotidiana con actividades
@@ -126,19 +120,16 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                    </div>
 
-                    <!-- Modal -->
-                    <div class="modal fade" id="formulario" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    <!-- Modal Formulario-->
+                    <div class="modal fade home__modal__formulario " id="formulario" tabindex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
-                                <div class="px-4">
-                                    <div class="modal-header">
-                                        <p class="fw-bold home__titulo_formulario fs-3 mt-3">¿Te
-                                            interesa
-                                            este
-                                            proyecto?</p>
+                                <div class="col">
+                                    <div class="col-12 modal-header">
+                                        <p class="fw-bold home__titulo_formulario fs-3 mt-1">¿Te interesa este proyecto?</p>
                                         <button type="button" class="btn-close home__modal" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                     </div>
@@ -147,25 +138,25 @@
                                             <div class="row">
                                                 <div class="col-12">
                                                     <input type="text" placeholder="Nombre:" name="nombre"
-                                                        class="home__input" autocomplete="off">
+                                                        class="home__input__modal" autocomplete="off">
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-12">
                                                     <input type="email" placeholder="Email:" name="email"
-                                                        class="home__input" autocomplete="off">
+                                                        class="home__input__modal" autocomplete="off">
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-12">
                                                     <input type="tel" placeholder="Celular:" name="celular"
-                                                        class="home__input" autocomplete="off">
+                                                        class="home__input__modal" autocomplete="off">
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-12">
                                                     <textarea placeholder="Mensaje:" name="nombre"
-                                                        class="home__input"></textarea>
+                                                        class="home__input__modal"></textarea>
                                                 </div>
                                             </div>
                                             <div class="row mt-3">
@@ -237,10 +228,7 @@
                     </div>
 
                        <!-- Contenido formulario -->
-
-                       <div class="home__separador__formulario prueba">
-                      
-
+                    <div class="home__separador__formulario prueba">
                         <div class=" col-sm-6 d-none d-xl-block bg-white rounded-3 p-2 p-xxl-5 home__formulario__ubicacion shadow-lg prueba">
                             <div class="row">
                                 <div class="col">
@@ -250,9 +238,8 @@
                                 </div>
                             </div>
                             <form>
-
                                 <div class="row">
-                                    <div class="col-10 col-xxl-12">
+                                    <div class="col-12">
                                         <input type="text" placeholder="Nombre:" name="nombre" class="home__input"
                                             autocomplete="off">
                                     </div>
@@ -296,15 +283,12 @@
                                 </div>
                             </form>
                         </div>
-
-                      </div>
-
+                    </div>
                 </div>
             </div>
         </div>
 
     </section>
-
     <!-- Somos -->
     <section id="somos" class="h-100">
         <div id="carousel" class="carousel slide somos somos__borde_bottom" data-interval="false">
@@ -320,11 +304,11 @@
                         alt="salide1">
                 </div>
                 <div class="carousel-item" data-bs-target="#carousel" data-bs-slide-to="1">
-                    <img src="./imagenes/somos/fondo2.jpg" class="d-block h-100 somos_imagen_fondo img-fluid"
+                    <img src="./imagenes/somos/fondo2.jpg" class="d-block h-100 w-100 somos_imagen_fondo img-fluid"
                         alt="salide2">
                 </div>
                 <div class="carousel-item" data-bs-target="#carousel" data-bs-slide-to="2">
-                    <img src="./imagenes/somos/fondo3.jpg" class="d-block h-100 somos_imagen_fondo img-fluid"
+                    <img src="./imagenes/somos/fondo3.jpg" class="d-block h-100 w-100 somos_imagen_fondo img-fluid"
                         alt="salide3">
                 </div>
             </div>
@@ -365,7 +349,6 @@
             <div class="somos__separador__contenido"></div>
         </div>
     </section>
-
     <!-- Diferenciales Navegación -->
     <section style="min-height: 20vh;" id="diferenciales" class="diferenciales diferenciales__logo__chico ">
 
@@ -407,35 +390,35 @@
 
                     <div class="row diferenciales__card">
                         <div class="col-12 d-flex flex-wrap justify-content-center align-items-center ">
-                            <div class="col-6 col-md-4 mb-2 mb-lg-5  d-flex justify-content-center">
+                            <div class="col-6 col-md-4 mb-2 mb-xxl-5  d-flex justify-content-center">
                                 <div class="card diferenciales__card__box shadow">
                                     <img src="./imagenes/diferenciales/areaComercial.png"
                                         class="card-img-top diferenciales__card__imagen" alt="areaComercial" id="card1">
                                     <p class="diferenciales__btn diferenciales__btn" id="texto1">Área comercial</p>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-4 mb-2 mb-lg-5  d-flex justify-content-center">
+                            <div class="col-6 col-md-4 mb-2 mb-xxl-5  d-flex justify-content-center">
                                 <div class="card diferenciales__card__box shadow">
                                     <img src="./imagenes/diferenciales/guarderiaNautica.png"
                                         class="card-img-top diferenciales__card__imagen" alt="areaComercial" id="card2">
                                     <p class="diferenciales__btn color" id="texto2">Guardería Náutica</p>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-4 mb-2 mb-lg-5  d-flex justify-content-center">
+                            <div class="col-6 col-md-4 mb-2 mb-xxl-5  d-flex justify-content-center">
                                 <div class="card diferenciales__card__box shadow">
                                     <img src="./imagenes/diferenciales/circuitoRecreativo.png"
                                         class="card-img-top diferenciales__card__imagen" alt="areaComercial" id="card3">
                                     <p class="diferenciales__btn" id="texto3">Circuito Deportivo Recreativo</p>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-4 mb-2 mb-lg-5  d-flex justify-content-center">
+                            <div class="col-6 col-md-4 mb-2 mb-xxl-5  d-flex justify-content-center">
                                 <div class="card diferenciales__card__box shadow">
                                     <img src="./imagenes/diferenciales/relax&bosqueZen.png"
                                         class="card-img-top diferenciales__card__imagen" alt="areaComercial" id="card4">
                                     <p class="diferenciales__btn" id="texto4">Zona Relax & Bosque Zen</p>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-4 mb-2 mb-lg-5 d-flex justify-content-center">
+                            <div class="col-6 col-md-4 mb-2 mb-xxl-5 d-flex justify-content-center">
                                 <div class="card diferenciales__card__box shadow" id="card5">
                                     <img src="./imagenes/diferenciales/espaciosComunes.png"
                                         class="card-img-top diferenciales__card__imagen" alt="areaComercial" id="card5">
@@ -444,6 +427,8 @@
                             </div>
                         </div>
                     </div>
+
+
                 </div>
 
             </div>
@@ -456,9 +441,10 @@
         <div class="diferenciales__puntos__nuevos">
             <div class="diferenciales__logo">
                 <div class="container vitta_card1">
+
                     <div class="row diferenciales__card prueba">
                         <div class="col d-flex flex-wrap justify-content-center align-items-center ">
-                            <div class="col-6 col-md-4 mb-2 mb-lg-5 d-flex justify-content-center">
+                            <div class="col-6 col-md-4 mb-2 mb-xxl-5 d-flex justify-content-center">
                                 <div class="card diferenciales__card__box shadow">
                                     <img src="./imagenes/diferenciales/areaComercial.png"
                                         class="card-img-top diferenciales__card__imagen img-fluid" alt="areaComercial"
@@ -466,7 +452,7 @@
                                     <p class="diferenciales__btn diferenciales__btn" id="texto1">Área comercial</p>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-4 mb-2 mb-lg-5 d-flex justify-content-center">
+                            <div class="col-6 col-md-4 mb-2 mb-xxl-5 d-flex justify-content-center">
                                 <div class="card diferenciales__card__box shadow">
                                     <img src="./imagenes/diferenciales/vittaRio/espacioLudicos.png"
                                         class="card-img-top diferenciales__card__imagen img-fluid" alt="areaComercial"
@@ -474,7 +460,7 @@
                                     <p class="diferenciales__btn color" id="texto2">Espacio Lúdicos</p>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-4 mb-2 mb-lg-5 d-flex justify-content-center">
+                            <div class="col-6 col-md-4 mb-2 mb-xxl-5 d-flex justify-content-center">
                                 <div class="card diferenciales__card__box shadow">
                                     <img src="./imagenes/diferenciales/circuitoRecreativo.png"
                                         class="card-img-top diferenciales__card__imagen img-fluid" alt="areaComercial"
@@ -482,14 +468,14 @@
                                     <p class="diferenciales__btn" id="texto3">Circuito Deportivo Recreativo</p>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-4 mb-2 mb-lg-5 d-flex justify-content-center">
+                            <div class="col-6 col-md-4 mb-2 mb-xxl-5 d-flex justify-content-center">
                                 <div class="card diferenciales__card__box shadow">
                                     <img src="./imagenes/diferenciales/relax&bosqueZen.png"
                                         class="card-img-top diferenciales__card__imagen" alt="areaComercial" id="card4">
                                     <p class="diferenciales__btn" id="texto4">Área Zen</p>
                                 </div>
                             </div>
-                            <div class="col-6 col-md-4 mb-2 mb-lg-5 d-flex justify-content-center">
+                            <div class="col-6 col-md-4 mb-2 mb-xxl-5 d-flex justify-content-center">
                                 <div class="card diferenciales__card__box shadow" id="card5">
                                     <img src="./imagenes/diferenciales/espaciosComunes.png"
                                         class="card-img-top diferenciales__card__imagen" alt="areaComercial" id="card5">
@@ -498,6 +484,8 @@
                             </div>
                         </div>
                     </div>
+
+                    
                 </div>
             </div>
         </div>
@@ -511,7 +499,7 @@
                         <div class="col">
                             <div class="d-flex flex-wrap align-items-center justify-content-center">
 
-                                <div class="col-6 col-sm-4 mb-2 mb-lg-5 mx-4 d-flex justify-content-center">
+                                <div class="col-sm-4 mb-2 mb-xxl-5 d-flex justify-content-center">
                                     <div class="card diferenciales__card__box shadow">
                                         <img src="./imagenes/diferenciales/areaComercial.png"
                                             class="card-img-top diferenciales__card__imagen" alt="areaComercial"
@@ -520,7 +508,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-6 col-sm-4 mb-2 mb-lg-5   d-flex justify-content-center">
+                                <div class="col-sm-4 mb-2 mb-xxl-5   d-flex justify-content-center">
                                     <div class="card diferenciales__card__box shadow">
                                         <img src="./imagenes/diferenciales/vittaUrbano/espacioUrbano.png"
                                             class="card-img-top diferenciales__card__imagen" alt="areaComercial"
@@ -529,7 +517,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-6 col-sm-4 mb-2 mb-lg-5   mx-4 d-flex justify-content-center">
+                                <div class="col-sm-4 mb-2 mb-xxl-5 d-flex justify-content-center">
                                     <div class="card diferenciales__card__box shadow">
                                         <img src="./imagenes/diferenciales/circuitoRecreativo.png"
                                             class="card-img-top diferenciales__card__imagen" alt="areaComercial"
@@ -538,14 +526,19 @@
                                     </div>
                                 </div>
 
-                                <div class="col-6 col-sm-4 mb-2 mb-lg-5  d-flex justify-content-center">
-                                    <div class="card diferenciales__card__box shadow" id="card5">
+
+                                <div class="col-sm-4 mb-2 mb-xxl-5 d-flex justify-content-center">
+                                    <div class="card diferenciales__card__box shadow">
                                         <img src="./imagenes/diferenciales/espaciosComunes.png"
-                                            class="card-img-top diferenciales__card__imagen" alt="areaComercial"
-                                            id="card5">
-                                        <p class="diferenciales__btn" id="texto5">Espacios Comunes</p>
+                                        class="card-img-top diferenciales__card__imagen" alt="areaComercial"
+                                        id="card5">
+                                    <p class="diferenciales__btn" id="texto5">Espacios Comunes</p>>
                                     </div>
                                 </div>
+
+                    
+
+
 
                             </div>
                         </div>
@@ -555,9 +548,8 @@
         </div>
 
     </section>
-
     <!-- Ubicación -->
-    <section style="min-height: 100vh;" class="ubicacion foto ubicacion__persona pb-5 mt-5" id="ubicacion">
+    <section style="min-height: 100vh;" class="ubicacion foto ubicacion__persona pb-1 pb-xxl-5 mt-1 mt-xxl-5" id="ubicacion">
 
         <div class="container  ">
 
@@ -572,9 +564,9 @@
 
                 <div class="d-flex flex-wrap align-items-center h-100  ">
                     <!-- COntenido -->
-                    <div class="col-12 col-lg-6 d-flex mt-5 h-100">
+                    <div class="col-12 col-lg-6 d-flex mt-1 mt-xxl-5 h-100">
                         <!-- Logo Ubicacion -->
-                        <div class="col-1 text-center mb-auto mt-5 pe-1">
+                        <div class="col-1 text-center mb-auto mt-1 mt-xxl-5 pe-1">
                             <svg width="28" height="48" viewBox="0 0 58 78" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_24_8512)">
@@ -590,12 +582,12 @@
                             </svg>
                         </div>
                         <!-- Texto -->
-                        <div class="mt-5">
+                        <div class="mt-1 mt-xxl-5">
                             <div class="d-flex flex-column">
                                 <h1 class="ubicacion__titulo_principal ms-1">General Lagos</h1>
-                                <h2 class="text-white fs-3 ms-1 mt-3">A 22km de Rosario</h2>
+                                <h2 class="text-white fs-4 fs-xxl-3 ms-1 mt-3">A 22km de Rosario</h2>
                             </div>
-                            <div class="col-10 d-flex flex-column mt-5">
+                            <div class="col-10 d-flex flex-column mt-1 mt-xxl-5">
 
                                 <p class="text-white ubicacion__parrafo fw-lighter lh-1 pe-3 pe-md-0">Es
                                     una comuna a <strong class="fw-bold">22 km de Rosario</strong>, pegada a la ciudad de Pueblo
@@ -611,8 +603,9 @@
                             </div>
                         </div>
                     </div>
+
                     <!-- Mapa -->
-                    <div class="col-12 col-lg-6 mt-5 ubicacion__card h-100 p-5 ">
+                    <div class="col-12 col-lg-6 mt-1 mt-xxl-5 ubicacion__card h-100 p-0 p-xxl-5 ">
                         <div class="ubicacion__borde">
                             <div class="ubicacion__nuevos__puntos">
                                 <div class="ubicacion__nuevos__circulo_mapa ">
@@ -625,17 +618,15 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
     </section>
-
     <!-- Servicios -->
     <section style="min-height: 100vh;" class="servicios servicio__circulo " id="servicios">
 
         <div class="servicio__logo">
-
-
             <div class="servicio__puntos">
                 <div class="container">
                     <div class="row">
@@ -644,17 +635,13 @@
                             <p class="ubicacion__subtitulo">en todos los barrios</p>
                         </div>
                     </div>
-
                     <div class="row servicio__contenido__card h-100">
-                        <div class="col mt-5">
-                            <div
-                                class="flex-wrap d-flex justify-content-between align-items-center align-content-center h-100">
-
+                        <div class="ms-0 ms-md-5 mt-0 mt-xxl-5">
+                            <div class="flex-wrap d-flex justify-content-center align-items-center align-content-sm-stretch h-100">
                                 <div class="col-6 col-md-4">
                                     <div class="card servicios__card" style="max-width: 540px;">
                                         <div class="row">
-                                            <div class="col-md-4">
-
+                                            <div class="col-3 col-xxl-4">
                                                 <svg class="servicio__svg" viewBox="0 0 72 91" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <g clip-path="url(#clip0_54_139)">
@@ -679,12 +666,10 @@
                                                             <rect width="72" height="91" fill="white" />
                                                         </clipPath>
                                                     </defs>
-                                                </svg>                                               
-
+                                                </svg>
                                             </div>
-
-                                            <div class="col-md-8 d-flex align-items-center">
-                                                <div class="card-body mx-1 ">
+                                            <div class="col-9 col-xxl-8 d-flex align-items-center">
+                                                <div class="card-body mx-4 mx-xxl-1 ">
 
                                                     <p
                                                         class="card-text servicios__texto__card text-center text-md-start">
@@ -696,11 +681,10 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="col-6 col-md-4">
                                     <div class="card servicios__card" style="max-width: 540px;">
                                         <div class="row">
-                                            <div class="col-md-4">
+                                            <div class="col-3 col-xxl-4">
                                                 <svg class="servicio__svg" viewBox="0 0 89 69" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -741,8 +725,8 @@
                                                         fill="#D3D92E" />
                                                 </svg>
                                             </div>
-                                            <div class="col-md-8 d-flex align-items-center">
-                                                <div class="card-body ">
+                                            <div class="col-9 col-xxl-8 d-flex align-items-center">
+                                                <div class="card-body mx-4 mx-xxl-1 ">
                                                     <p
                                                         class="card-text servicios__texto__card text-center text-md-start mx-1">
                                                         Wi-Fi
@@ -752,11 +736,10 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="col-6 col-md-4">
                                     <div class="card servicios__card" style="max-width: 540px;">
                                         <div class="row">
-                                            <div class="col-md-4">
+                                            <div class="col-3 col-xxl-4">
                                                 <svg class="servicio__svg" viewBox="0 0 93 93" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -764,8 +747,8 @@
                                                         fill="#D3D92E" />
                                                 </svg>
                                             </div>
-                                            <div class="col-md-8 d-flex align-items-center">
-                                                <div class="card-body">
+                                            <div class="col-9 col-xxl-8 d-flex align-items-center">
+                                                <div class="card-body mx-4 mx-xxl-1 ">
                                                     <p
                                                         class="card-text servicios__texto__card text-center text-md-start mx-1">
                                                         Agua
@@ -776,11 +759,10 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="col-6 col-md-4">
                                     <div class="card servicios__card" style="max-width: 540px;">
                                         <div class="row">
-                                            <div class="col-md-4">
+                                            <div class="col-3 col-xxl-4">
                                                 <svg class="servicio__svg" viewBox="0 0 92 92" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -797,8 +779,8 @@
                                                         fill="#D3D92E" />
                                                 </svg>
                                             </div>
-                                            <div class="col-md-8 d-flex align-items-center">
-                                                <div class="card-body">
+                                            <div class="col-9 col-xxl-8 d-flex align-items-center">
+                                                <div class="card-body mx-4 mx-xxl-1 ">
                                                     <p
                                                         class="card-text servicios__texto__card text-center text-md-start mx-1">
                                                         Forestación
@@ -808,11 +790,10 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="col-6 col-md-4">
                                     <div class="card servicios__card" style="max-width: 540px;">
                                         <div class="row">
-                                            <div class="col-md-4">
+                                            <div class="col-3 col-xxl-4">
                                                 <svg class="servicio__svg" viewBox="0 0 87 87" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -820,8 +801,8 @@
                                                         fill="#D3D92E" />
                                                 </svg>
                                             </div>
-                                            <div class="col-md-8 d-flex align-items-center">
-                                                <div class="card-body">
+                                            <div class="col-9 col-xxl-8 d-flex align-items-center">
+                                                <div class="card-body mx-4 mx-xxl-1 ">
                                                     <p
                                                         class="card-text servicios__texto__card text-center text-md-start mx-1">
                                                         Gas
@@ -831,11 +812,10 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="col-6 col-md-4">
                                     <div class="card servicios__card" style="max-width: 540px;">
                                         <div class="row">
-                                            <div class="col-md-4">
+                                            <div class="col-3 col-xxl-4">
                                                 <svg class="servicio__svg" viewBox="0 0 68 95" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -858,8 +838,8 @@
                                                         fill="#D3D92E" />
                                                 </svg>
                                             </div>
-                                            <div class="col-md-8 d-flex align-items-center">
-                                                <div class="card-body">
+                                            <div class="col-9 col-xxl-8 d-flex align-items-center">
+                                                <div class="card-body mx-4 mx-xxl-1 ">
                                                     <p
                                                         class="card-text servicios__texto__card text-center text-md-start mx-1">
                                                         Alumbrado
@@ -869,11 +849,10 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="col-6 col-md-4">
                                     <div class="card servicios__card" style="max-width: 540px;">
                                         <div class="row">
-                                            <div class="col-md-4">
+                                            <div class="col-3 col-xxl-4">
                                                 <svg class="servicio__svg" viewBox="0 0 91 112" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M44.579 59.9263H48.2594V63.6067H44.579V59.9263Z"
@@ -883,8 +862,8 @@
                                                         fill="#D3D92E" />
                                                 </svg>
                                             </div>
-                                            <div class="col-md-8 d-flex align-items-center">
-                                                <div class="card-body">
+                                            <div class="col-9 col-xxl-8 d-flex align-items-center">
+                                                <div class="card-body mx-4 mx-xxl-1 ">
                                                     <p
                                                         class="card-text servicios__texto__card text-center text-md-start mx-1">
                                                         Red media
@@ -895,11 +874,10 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="col-6 col-md-4">
                                     <div class="card servicios__card" style="max-width: 540px;">
                                         <div class="row">
-                                            <div class="col-md-4">
+                                            <div class="col-3 col-xxl-4">
                                                 <svg class="servicio__svg" width="87" height="89" viewBox="0 0 87 89"
                                                     fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <g clip-path="url(#clip0_54_145)">
@@ -915,8 +893,8 @@
                                                     </defs>
                                                 </svg>
                                             </div>
-                                            <div class="col-md-8 d-flex align-items-center">
-                                                <div class="card-body">
+                                            <div class="col-9 col-xxl-8 d-flex align-items-center">
+                                                <div class="card-body mx-4 mx-xxl-1 ">
                                                     <p
                                                         class="card-text servicios__texto__card text-center text-md-start mx-1">
                                                         Cloacas
@@ -926,11 +904,10 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="col-6 col-md-4">
                                     <div class="card servicios__card" style="max-width: 540px;">
                                         <div class="row">
-                                            <div class="col-md-4">
+                                            <div class="col-3 col-xxl-4">
                                                 <svg class="servicio__svg" width="89" height="68" viewBox="0 0 89 68"
                                                     fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <g clip-path="url(#clip0_191_2)">
@@ -957,9 +934,8 @@
                                                     </defs>
                                                 </svg>
                                             </div>
-
-                                            <div class="col-md-8 d-flex align-items-center">
-                                                <div class="card-body">
+                                            <div class="col-9 col-xxl-8 d-flex align-items-center">
+                                                <div class="card-body mx-4 mx-xxl-1 ">
                                                     <p
                                                         class="card-text servicios__texto__card text-center text-md-start mx-1">
                                                         Estabilizado granulado
@@ -969,8 +945,6 @@
                                         </div>
                                     </div>
                                 </div>
-
-
                             </div>
 
                         </div>
@@ -981,7 +955,6 @@
             </div>
         </div>
     </section>
-
     <!--Triple impacto  -->
     <section style="min-height: 60vh;" class="impacto impacto__logo" id="impacto">
         <!-- Circulo azul -->
@@ -1017,7 +990,6 @@
             </div>
         </div>
     </section>
-
     <!-- Nosotros -->
     <section style="min-height: 40vh;" class="nosotros" id="nosotros">
         <div class="container">
@@ -1100,14 +1072,12 @@
             </div>
         </div>
     </section>
-
     <!-- Footer -->
     <footer>
         <div class="container-fluid  footer_principal">
             <div class="container">
                 <div class="row  justify-content-around">
                     <div class="col-12 col-md-4 text-white h-100 d-flex mt-5">
-
                         <a href="#" class="arriba h-100 ">
                             <svg width="275" height="94" viewBox="0 0 275 94" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -1227,10 +1197,10 @@
         </div>
 
         <div class="container-fluid">
-            <div class="row footer__secundario">
+            <div class="row footer__secundario h-100">
                 <div class="col">
                     <div class="d-flex align-items-center justify-content-center mt-3">
-                        <h3 class="fotter__derechos">Vitta 2021. Todos los derechos reservados 2021.</h3>
+                        <h3 class=" fs-6 fotter__derechos text-center">Vitta 2021. Todos los derechos reservados 2021.</h3>
                     </div>
                 </div>
             </div>

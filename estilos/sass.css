@@ -136,6 +136,8 @@ li {
 .home__titulo__principal_nuevo {
   color: #d3d92e;
   line-height: 122%;
+  font-size: 5rem;
+  font-weight: bold;
 }
 
 .home__parrafo1 {
@@ -183,7 +185,6 @@ li {
   color: #181E2E;
   border: 0px;
   border-bottom: 1px solid #DBDBDB;
-  margin-bottom: 10% px;
   height: 10%;
   width: 90%;
   padding: 2rem;
@@ -191,6 +192,20 @@ li {
 }
 .home__input:focus {
   border-bottom: 2px solid #d3d92e;
+  outline: none;
+}
+
+.home__input__modal {
+  color: #181E2E;
+  border: 0px;
+  border-bottom: 1px solid #DBDBDB;
+  height: 10%;
+  width: 90%;
+  padding: 1rem;
+  transition: border-bottom 0.3s ease;
+}
+.home__input__modal:focus {
+  border-bottom: 1px solid #d3d92e;
   outline: none;
 }
 
@@ -267,11 +282,19 @@ textarea::placeholder {
   .home__btn_cel {
     padding: 5px 10px 5px 10px;
   }
+
+  .home__titulo__principal_nuevo {
+    font-size: 0.5rem;
+  }
 }
 /* Dispositivo MD */
 @media screen and (max-width: 768px) {
   .home_carrusel1 {
     display: none;
+  }
+
+  .home__titulo__principal_nuevo {
+    font-size: 1.5rem;
   }
 }
 @media (max-width: 992px) {
@@ -285,9 +308,13 @@ textarea::placeholder {
 
   .fondo__chico {
     background-image: url(../../imagenes/home/logo2.png);
-    background-size: 40%;
+    background-size: 20%;
     background-repeat: no-repeat;
     background-position: 0% 0%;
+  }
+
+  .home__titulo__principal_nuevo {
+    font-size: 2rem;
   }
 }
 /* Dispositivo XL */
@@ -297,8 +324,12 @@ textarea::placeholder {
     left: 40%;
     z-index: 0;
   }
+
+  .home__titulo__principal_nuevo {
+    font-size: 2.5rem;
+  }
 }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1600px) {
   .home__carrusel__index {
     position: absolute;
     left: 45%;
@@ -309,7 +340,7 @@ textarea::placeholder {
     width: 40%;
     position: absolute;
     z-index: 3;
-    left: 58%;
+    left: 59%;
     right: 0;
     top: 0;
     bottom: 0;
@@ -318,18 +349,39 @@ textarea::placeholder {
     align-items: center;
   }
 
+  .home__modal__formulario {
+    width: 98%;
+  }
+
   .home__input {
     color: #181E2E;
     border: 0px;
     border-bottom: 1px solid #DBDBDB;
     margin-bottom: 0%;
     height: 8%;
-    padding: 1rem;
+    padding: 1.2rem;
     transition: border-bottom 0.3s ease;
   }
   .home__input:focus {
     border-bottom: 2px solid #d3d92e;
     outline: none;
+  }
+
+  .home__imagen {
+    height: 100%;
+    width: 70%;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .home__titulo__principal_nuevo {
+    color: #d3d92e;
+    font-size: 3rem;
+  }
+
+  .home__img__vitta {
+    height: 30%;
+    width: 30%;
   }
 }
 .somos__separador {
@@ -479,8 +531,8 @@ section.diferencialesVittaUrbano {
 }
 
 .diferenciales__logo__chico {
-  background-image: url(../../imagenes/diferenciales/logo.png);
-  background-size: 11%;
+  background-image: url(../../imagenes/diferenciales/vitta/logo.png);
+  background-size: 6.9%;
   background-position: 0% 0%;
   background-repeat: no-repeat;
   position: relative;
@@ -540,9 +592,21 @@ section.diferencialesVittaUrbano {
     height: 6rem;
     width: 6rem;
   }
+
+  .diferenciales__card__box {
+    border: 1px solid #eaeaea;
+    border-radius: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: 100%;
+  }
 }
 /* Dispositivo XL */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
   .diferenciales__card {
     margin-left: 0px;
     position: relative;
@@ -555,8 +619,36 @@ section.diferencialesVittaUrbano {
   }
 
   .diferenciales__card__imagen {
-    height: 10rem;
-    width: 10rem;
+    height: 6rem;
+    width: 6rem;
+  }
+
+  .diferenciales__card__box {
+    border: 1px solid #eaeaea;
+    border-radius: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    transition: transform 0.3s ease;
+    width: 50%;
+    height: 50%;
+  }
+
+  .diferenciales__card {
+    margin-top: 2rem;
+  }
+
+  .diferenciales__btn {
+    background-color: #d3d92e;
+    border: none;
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-size: 0.6rem;
+    font-weight: bold;
+    padding: 2% 7% 2% 7%;
+    text-align: center;
+    margin-top: 10%;
   }
 }
 .ubicacion {
@@ -695,6 +787,14 @@ section.diferencialesVittaUrbano {
   }
 }
 /* Dispositivo MD */
+@media screen and (max-width: 768px) {
+  .ubicacion__persona {
+    background-image: url(../../imagenes/ubicacion/persona.png);
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: 100% 40%;
+  }
+}
 /* Dispositivo LG */
 @media screen and (max-width: 992px) {
   .ubicacion__mapa {
@@ -703,10 +803,21 @@ section.diferencialesVittaUrbano {
   }
 }
 /* Dispositivo XL */
-@media screen and (max-width: 1200px) {
+@media (max-width: 1400px) {
+  .ubicacion__titulo_principal {
+    color: #d3d92e;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .ubicacion__parrafo {
+    text-align: justify;
+    font-size: 0.9rem;
+  }
+
   .ubicacion__mapa {
-    width: 30rem;
-    height: 30rem;
+    width: 25rem;
+    height: 27rem;
   }
 }
 .servicios {
@@ -797,6 +908,10 @@ svg.servicio__svg:hover {
   .servicios__card {
     margin-bottom: 1rem;
   }
+
+  .servicios__texto__card {
+    font-size: 0.1rem;
+  }
 }
 @media (max-width: 768px) {
   .servicio__svg {
@@ -805,6 +920,11 @@ svg.servicio__svg:hover {
 
   .servicios__texto__card {
     font-size: 12px;
+  }
+}
+@media (max-width: 1399.98px) {
+  .servicios__texto__card {
+    font-size: 0.9rem;
   }
 }
 .impacto__contenido {
@@ -977,7 +1097,6 @@ svg.servicio__svg:hover {
 
 .fotter__derechos {
   color: #FFFFFF;
-  font-size: 1rem;
 }
 
 .footer__logo {

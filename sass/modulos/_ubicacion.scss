@@ -161,7 +161,17 @@
 }
 
 /* Dispositivo MD */
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+
+
+    .ubicacion__persona{
+        background-image: url(../../imagenes/ubicacion/persona.png);
+    
+        background-repeat: no-repeat;
+        background-size: 20%;
+        background-position: 100% 40%;
+    }
+}
 
 /* Dispositivo LG */
 @media screen and (max-width: 992px) {
@@ -179,12 +189,30 @@
     .ubicacion__mapa{
  
       
-        width: 30rem ;
-        height: 30rem;
+
     }
 
 }
 
 
 // XX-Large devices (larger desktops, 1400px and up)
-@media (max-width: 1350px) { }
+@media (max-width: 1400px) {
+
+    .ubicacion__titulo_principal{
+        color:$amarillo;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .ubicacion__parrafo{ 
+        text-align: justify; 
+        font-size: 0.9rem;    
+    }  
+    
+    .ubicacion__mapa{
+      
+        width: 25rem ;
+        height: 27rem;
+    }
+
+}

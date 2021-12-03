@@ -92,8 +92,8 @@ section.diferencialesVittaUrbano{
 }
 
 .diferenciales__logo__chico{
-    background-image: url(../../imagenes/diferenciales/logo.png);
-    background-size: 11%;
+    background-image: url(../../imagenes/diferenciales/vitta/logo.png);
+    background-size: 6.9%;
     background-position: 0% 0%;
     background-repeat: no-repeat;
     position: relative;    
@@ -146,6 +146,11 @@ section.diferencialesVittaUrbano{
         width: 2rem;
     }
     
+
+
+
+
+    
 }
 
 /* Dispositivo LG */
@@ -154,11 +159,25 @@ section.diferencialesVittaUrbano{
         height: 6rem;
         width: 6rem;
     }
+
+    .diferenciales__card__box{
+        border: 1px solid $contorno;
+        border-radius: 43px;    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        transition: transform .3s ease;
+        width: 100%;
+        height: 100%
+    
+    
+    }
     
 }
 
 /* Dispositivo XL */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
 
     .diferenciales__card{
         margin-left: 0px;
@@ -173,8 +192,42 @@ section.diferencialesVittaUrbano{
     }  
     
     .diferenciales__card__imagen{
-        height: 10rem;
-        width: 10rem;
+        height: 6rem;
+        width: 6rem;
+    }
+
+    .diferenciales__card__box{
+        border: 1px solid $contorno;
+        border-radius: 43px;    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        transition: transform .3s ease;
+        width: 50%;
+        height: 50%
+    
+    
+    }
+
+    .diferenciales__card{
+
+        margin-top: 2rem;    
+  
+    }
+
+    .diferenciales__btn{
+        background-color: $amarillo;
+        border: none;
+        border-radius: 20px;
+        color:$blanco ;
+        font-size: 0.6rem;
+        font-weight: bold;
+        padding: 2% 7% 2% 7%; 
+        text-align: center;
+        margin-top: 10%;  
     }
     
 }
+
+
