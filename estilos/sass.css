@@ -759,7 +759,7 @@ section.diferencialesVittaUrbano {
 }
 
 .ubicacion__borde {
-  background-image: url(../../imagenes/ubicacion/borde.png);
+  background-image: url(../../imagenes/ubicacion/borde1.png);
   background-size: 80%;
   background-position: 75% 60%;
   background-repeat: no-repeat;
@@ -910,7 +910,7 @@ svg.servicio__svg:hover {
   }
 
   .servicios__texto__card {
-    font-size: 0.1rem;
+    font-size: 8px;
   }
 }
 @media (max-width: 768px) {
@@ -919,12 +919,17 @@ svg.servicio__svg:hover {
   }
 
   .servicios__texto__card {
+    font-size: 9px;
+  }
+}
+@media (max-width: 991.98px) {
+  .servicios__texto__card {
     font-size: 12px;
   }
 }
-@media (max-width: 1399.98px) {
+@media (max-width: 1199.98px) {
   .servicios__texto__card {
-    font-size: 0.9rem;
+    font-size: 14px;
   }
 }
 .impacto__contenido {
