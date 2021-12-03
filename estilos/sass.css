@@ -163,10 +163,11 @@ li {
 }
 
 .home__separador__formulario {
-  width: 80%;
+  width: 40%;
   position: absolute;
-  z-index: 2;
-  left: 30%;
+  z-index: 3;
+  left: 58%;
+  right: 0;
   top: 0;
   bottom: 0;
   display: flex;
@@ -268,10 +269,67 @@ textarea::placeholder {
   }
 }
 /* Dispositivo MD */
+@media screen and (max-width: 768px) {
+  .home_carrusel1 {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .home_carrusel1 {
+    display: none;
+  }
+
+  .home__imagen {
+    display: none;
+  }
+
+  .fondo__chico {
+    background-image: url(../../imagenes/home/logo2.png);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+  }
+}
 /* Dispositivo XL */
 @media screen and (max-width: 1200px) {
-  .home__fondo {
-    background-size: 50%;
+  .home__carrusel__index {
+    position: absolute;
+    left: 40%;
+    z-index: 0;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .home__carrusel__index {
+    position: absolute;
+    left: 45%;
+    z-index: 0;
+  }
+
+  .home__separador__formulario {
+    width: 40%;
+    position: absolute;
+    z-index: 3;
+    left: 58%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home__input {
+    color: #181E2E;
+    border: 0px;
+    border-bottom: 1px solid #DBDBDB;
+    margin-bottom: 0%;
+    height: 8%;
+    padding: 1rem;
+    transition: border-bottom 0.3s ease;
+  }
+  .home__input:focus {
+    border-bottom: 2px solid #d3d92e;
+    outline: none;
   }
 }
 .somos__separador {
@@ -515,6 +573,55 @@ section.diferencialesVittaUrbano {
   z-index: 1;
 }
 
+.ubicacion__separator {
+  text-align: start;
+  padding-left: -1.25rem;
+  margin-left: -1.25rem;
+  position: absolute;
+}
+.ubicacion__separator::after {
+  position: absolute;
+  content: "";
+  height: 1.25rem;
+  width: 13rem;
+  background-color: #d3d92e;
+  top: -1.5em;
+}
+
+.corner-wrapper {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transform: translateZ(4px);
+  border: 3px solid #eee;
+}
+
+.player-wrapper {
+  border-radius: 50%;
+  border: solid 1px #999;
+  width: 360px;
+  height: 360px;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  top: 90px;
+  margin-left: -130px;
+  z-index: 10;
+}
+
+.player-wrapper iframe {
+  position: absolute;
+  left: 50%;
+  margin-left: -320px;
+  z-index: 9;
+}
+
+.ubicacion__titulo_principal {
+  color: #d3d92e;
+}
+
 .ubicacion__titulo_principal {
   color: #d3d92e;
   font-size: 3.5rem;
@@ -523,7 +630,7 @@ section.diferencialesVittaUrbano {
 
 .ubicacion__parrafo {
   text-align: justify;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .ubicacion__icono {
@@ -552,7 +659,7 @@ section.diferencialesVittaUrbano {
   background-repeat: no-repeat;
 }
 
-.ubicacion__nuevos__circulo_mapa_borrar {
+.ubicacion__nuevos__circulo_mapa {
   background-image: url(../../imagenes/ubicacion/circulo.png);
   background-size: 20%;
   background-position: 2% 97%;
@@ -589,7 +696,19 @@ section.diferencialesVittaUrbano {
 }
 /* Dispositivo MD */
 /* Dispositivo LG */
+@media screen and (max-width: 992px) {
+  .ubicacion__mapa {
+    width: 25rem;
+    height: 25rem;
+  }
+}
 /* Dispositivo XL */
+@media screen and (max-width: 1200px) {
+  .ubicacion__mapa {
+    width: 30rem;
+    height: 30rem;
+  }
+}
 .servicios {
   background-color: #181E2E;
 }
@@ -621,7 +740,7 @@ section.diferencialesVittaUrbano {
 .servicios__texto__card {
   color: #FFFFFF;
   font-weight: lighter;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: start;
 }
 
@@ -639,6 +758,14 @@ section.diferencialesVittaUrbano {
   height: 80%;
   margin-left: 40px;
   margin-top: 15px;
+}
+
+svg.servicio__svg {
+  fill: #d3d92e;
+  transition: all 0.4s ease;
+}
+svg.servicio__svg:hover {
+  stroke: #d3d92e;
 }
 
 .servicio__circulo {

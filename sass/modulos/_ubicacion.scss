@@ -12,6 +12,55 @@
     z-index: 1;    
 }
 
+.ubicacion__separator{
+    text-align: start;
+    padding-left: -1.25rem;
+    margin-left: -1.25rem;
+    position: absolute;
+    &::after{
+        position: absolute;
+        content: '';
+        height: 1.25rem;
+        width: 13rem;
+        background-color: $amarillo;
+        top:-1.5em;       
+    }
+}
+
+.corner-wrapper {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transform: translateZ(4px);
+    border: 3px solid #eee;
+}
+
+.player-wrapper{
+    border-radius:50%;  
+    border:solid 1px #999;
+    width:360px;
+    height:360px;
+    overflow:hidden;
+    position:absolute;
+    left:50%;
+    top:90px;
+    margin-left:-130px;
+    z-index:10;
+}
+.player-wrapper iframe{
+    position:absolute;
+    left:50%;
+    margin-left:-320px; 
+    z-index:9;
+}
+
+
+
+.ubicacion__titulo_principal{
+    color:$amarillo;
+}
 
 
 
@@ -25,7 +74,7 @@
 
 .ubicacion__parrafo{ 
     text-align: justify; 
-    font-size: 1.4rem;    
+    font-size: 1.2rem;    
 }
 
 
@@ -59,7 +108,7 @@
  
 }
 
-.ubicacion__nuevos__circulo_mapa_borrar{
+.ubicacion__nuevos__circulo_mapa{
     background-image: url(../../imagenes/ubicacion/circulo.png);
     background-size: 20% ;
     background-position: 2% 97%;
@@ -92,6 +141,9 @@
     border-radius: 20px;
 }
 
+
+
+
 /////
 
 
@@ -112,10 +164,26 @@
 @media screen and (max-width: 768px) {}
 
 /* Dispositivo LG */
-@media screen and (max-width: 992px) {}
+@media screen and (max-width: 992px) {
+
+    .ubicacion__mapa{
+ 
+      
+        width: 25rem ;
+        height: 25rem;
+    }
+}
 
 /* Dispositivo XL */
-@media screen and (max-width: 1350px) {}
+@media screen and (max-width: 1200px) {
+    .ubicacion__mapa{
+ 
+      
+        width: 30rem ;
+        height: 30rem;
+    }
+
+}
 
 
 // XX-Large devices (larger desktops, 1400px and up)

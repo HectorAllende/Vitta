@@ -33,7 +33,7 @@
 .servicios__texto__card{
     color: $blanco;
     font-weight: lighter;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: start;
 }
 
@@ -53,6 +53,17 @@
    margin-left: 40px;
    margin-top: 15px;
 
+   
+   
+
+}
+svg.servicio__svg{
+    fill:$amarillo;
+    transition: all .4s ease ;
+
+    &:hover{
+        stroke: $amarillo;
+    }
 }
 
 .servicio__circulo{

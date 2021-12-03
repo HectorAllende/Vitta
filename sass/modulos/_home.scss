@@ -5,6 +5,8 @@
     background-color: $azul;
 }
 
+
+
 // .home__fondo_principal{
 //     background-image: url(../../imagenes/home/img-principal.png);
 //     background-size: 80%;
@@ -32,6 +34,8 @@
     position: absolute;
     z-index: 1;
 }
+
+
 
 .home__index{
     position: relative;
@@ -71,10 +75,11 @@
 
 
 .home__separador__formulario{
-    width: 80%;
+    width: 40%;
     position: absolute;
-    z-index: 2;
-    left: 30%;
+    z-index: 3;
+    left: 58%;
+    right: 0;
     top: 0;
     bottom: 0;
     display: flex;
@@ -90,7 +95,7 @@
     color: $azul;
     border:0px;
     border-bottom: 1px solid $input-linea;
-     margin-bottom: 10%px;
+    margin-bottom: 10%px;
     height:10% ;
     width: 90%;
     padding: 2rem;
@@ -196,19 +201,82 @@ textarea::placeholder{
 
 /* Dispositivo MD */
 @media screen and (max-width: 768px) {
-    
+      .home_carrusel1{
+        display: none
+    }
   
 }
+
+@media (max-width: 992px) {
+      .home_carrusel1{
+        display: none
+    }
+    .home__imagen{
+        display: none;
+    } 
+
+    .fondo__chico{
+        background-image: url(../../imagenes/home/logo2.png);
+        background-size: 40%;
+        background-repeat: no-repeat;
+        background-position: 0% 0%;
+    }
+
+    
+ }
 
 /* Dispositivo XL */
 @media screen and (max-width: 1200px) {
 
-    .home__fondo{
-  
-        background-size: 50%;
-
-    
+    .home__carrusel__index{
+        position: absolute;   
+        left: 40%; 
+        z-index: 0;
     }
+
+  
+
+}
+
+@media screen and (max-width: 1400px) {
+
+    .home__carrusel__index{
+        position: absolute;   
+        left: 45%; 
+        z-index: 0;
+    }
+
+    .home__separador__formulario{
+    width: 40%;
+    position: absolute;
+    z-index: 3;
+    left: 58%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home__input{
+    color: $azul;
+    border:0px;
+    border-bottom: 1px solid $input-linea;
+    margin-bottom: 0%;
+    height:8% ;
+
+    padding: 1rem;
+
+    transition: border-bottom .3s ease;
+
+    &:focus{
+        border-bottom: 2px solid $amarillo;
+        outline: none;
+    }
+}
+
+  
 
 }
 

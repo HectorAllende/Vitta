@@ -36,25 +36,25 @@
 
             <div class="collapse navbar-collapse color" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto align-items-center rounded cerrar">
-                    <li class="nav-item mx-4">
+                    <li class="nav-item mx-1 mx-xxl-4">
                         <a class="nav-link active header__enlace arriba" aria-current="page" href="#">Home</a>
                     </li>
-                    <li class="nav-item mx-4">
+                    <li class="nav-item mx-1 mx-lg-2 mx-xxl-4">
                         <a class="nav-link  header__enlace seccion1" aria-current="page" href="#somos">Somos</a>
                     </li>
 
-                    <li class="nav-item mx-4">
+                    <li class="nav-item mx-1 mx-xxl-4">
                         <a class="nav-link enlace header__enlace seccion2" href="#diferenciales">Diferenciales</a>
                     </li>
-                    <li class="nav-item mx-4">
+                    <li class="nav-item mx-1 mx-xxl-4">
                         <a class="nav-link enlace header__enlace seccion3" href="#ubicacion">Ubicación</a>
                     </li>
-                    <li class="nav-item mx-4">
+                    <li class="nav-item mx-1 mx-xxl-4">
                         <a class="nav-link enlace header__enlace secc" href="#servicios">Servicios</a>
                     </li>
                 </ul>
-                <div class="d-flex flex-row justify-content-center align-items-center p-3 me-3 ">
-                    <div class="mx-3">
+                <div class="d-flex flex-row justify-content-center align-items-center p-3 ">
+                    <div class="mx-2">
                         <a href="https://www.instagram.com/vitta.gl/?hl=es" target="_blank" rel="noopener noreferrer">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                 class="bi bi-instagram enlace" viewBox="0 0 16 16">
@@ -81,19 +81,17 @@
     <!-- Home  -->
     <section class="home " id="home">
 
-        <div class="h-100">
+        <div class="h-100 fondo__chico ">
             <div class="home_borde h-100 home__index ">
 
-                <div class="h-100">
-                    <div class="">
-                        <div class="">
-                            <img src="./imagenes/home/img-principal.png" class="home__imagen img-fluid"
-                                alt="imagen">
-                        </div>
-                        <!--Contenido Principal -->
-                        <div
-                            class="col-12 col-xl-6 mb-5 p-5 d-flex flex-column justify-content-center home__contenido__principal h-100">
+                <div class="h-100">   
 
+                        <div class="">
+                            <img src="./imagenes/home/img-principal.png" class="home__imagen img-fluid" alt="imagen">
+                        </div>
+
+                        <!--Contenido Principal -->
+                        <div class="col-12 col-xxl-6 mb-5 p-5 d-flex flex-column justify-content-center home__contenido__principal h-100">
                             <div class="container">
                                 <div class="row d-flex flex-column justify-content-center align-items-center">
                                     <!-- Titulo principal -->
@@ -104,123 +102,99 @@
                                     </div>
 
                                     <!-- Logos -->
-                                    <div class="col-9 py-4 d-none d-sm-block">
+                                    <div class="col-9  py-4 d-none d-md-block">
                                         <div class="d-flex justify-content-between ">
-
                                             <img src="./imagenes/home/vitta_vitta.png" alt="vitta" class="img-fluid">
-
                                             <img src="./imagenes/home/vitta_rio.png" alt="vittaRio" class="img-fluid">
-
-                                            <img src="./imagenes/home/vitta_urbano.png" alt="vittaUrbano"
+                                            <img src="./imagenes/home/vitta_urbano.png" alt="vittaUrbano" 
                                                 class="img-fluid">
                                         </div>
                                     </div>
 
                                     <!-- Texto -->
-                                    <div class="col-9 mt-4 mt-sm-1 py-5">
+                                    <div class="col-4 col-xl-9 mt-4 mt-sm-1 py-5">
                                         <p class="home__parrafo1">A través del diseño de sus áreas comunes,
-                                            equipamiento,
-                                            mobiliarios y
-                                            diversos espacios temáticos, Vitta <strong class="fw-bold"> fusiona la vida
-                                                urbana
-                                                cotidiana
-                                                con actividades recreativas, deportivas, lúdicas y meditativas</strong>
-                                            para
-                                            crear un
+                                            equipamiento, mobiliarios y diversos espacios temáticos, Vitta <strong
+                                                class="fw-bold"> fusiona la vida urbana cotidiana con actividades
+                                                recreativas, deportivas, lúdicas y meditativas</strong> para crear un
                                             paisaje residencial innovador.</p>
                                     </div>
-
                                     <!-- Boton -->
                                     <div class="col-12 col-md-6 d-flex justify-content-center">
                                         <button class="home__btn mt-3 d-block d-xl-none" data-bs-toggle="modal"
                                             data-bs-target="#formulario">Dejanos una consulta</button>
                                     </div>
-
-                                    <!-- Modal -->
-                                    <div class="modal fade" id="formulario" tabindex="-1"
-                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog">
-                                            <div class="modal-content">
-                                                <div class="px-4">
-                                                    <div class="modal-header">
-                                                        <p class="fw-bold home__titulo_formulario fs-3 mt-3">¿Te
-                                                            interesa
-                                                            este
-                                                            proyecto?</p>
-                                                        <button type="button" class="btn-close home__modal"
-                                                            data-bs-dismiss="modal" aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <form>
-                                                            <div class="row">
-                                                                <div class="col-12">
-                                                                    <input type="text" placeholder="Nombre:"
-                                                                        name="nombre" class="home__input"
-                                                                        autocomplete="off">
-                                                                </div>
-                                                            </div>
-                                                            <div class="row">
-                                                                <div class="col-12">
-                                                                    <input type="email" placeholder="Email:"
-                                                                        name="email" class="home__input"
-                                                                        autocomplete="off">
-                                                                </div>
-                                                            </div>
-                                                            <div class="row">
-                                                                <div class="col-12">
-                                                                    <input type="tel" placeholder="Celular:"
-                                                                        name="celular" class="home__input"
-                                                                        autocomplete="off">
-                                                                </div>
-                                                            </div>
-                                                            <div class="row">
-                                                                <div class="col-12">
-                                                                    <textarea placeholder="Mensaje:" name="nombre"
-                                                                        class="home__input"></textarea>
-                                                                </div>
-                                                            </div>
-                                                            <div class="row mt-3">
-
-                                                                <div class="col-12">
-                                                                    <p class="home__titulo_formulario_secundario">¿Donde
-                                                                        preferís
-                                                                        que te contactemos?</p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="row mt-3">
-                                                                <div
-                                                                    class="col-12 d-flex justify-content-between align-items-center ">
-                                                                    <div>
-                                                                        <label
-                                                                            class="home__titulo_formulario_secundario mx-2">Celular</label>
-                                                                        <input type="checkbox" class="home__checkbox">
-                                                                    </div>
-                                                                    <div class="">
-                                                                        <label
-                                                                            class="home__titulo_formulario_secundario mx-2">Email</label>
-                                                                        <input type="checkbox"
-                                                                            class="home__checkbox fs-6">
-                                                                    </div>
-                                                                    <button
-                                                                        class="home__btn home__btn_cel">Enviar</button>
-                                                                </div>
-                                                            </div>
-                                                        </form>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-
-
                                 </div>
                             </div>
+                        </div>
 
+                    <!-- Modal -->
+                    <div class="modal fade" id="formulario" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="px-4">
+                                    <div class="modal-header">
+                                        <p class="fw-bold home__titulo_formulario fs-3 mt-3">¿Te
+                                            interesa
+                                            este
+                                            proyecto?</p>
+                                        <button type="button" class="btn-close home__modal" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <input type="text" placeholder="Nombre:" name="nombre"
+                                                        class="home__input" autocomplete="off">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <input type="email" placeholder="Email:" name="email"
+                                                        class="home__input" autocomplete="off">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <input type="tel" placeholder="Celular:" name="celular"
+                                                        class="home__input" autocomplete="off">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <textarea placeholder="Mensaje:" name="nombre"
+                                                        class="home__input"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-3">
 
-
-
+                                                <div class="col-12">
+                                                    <p class="home__titulo_formulario_secundario">¿Donde
+                                                        preferís
+                                                        que te contactemos?</p>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-3">
+                                                <div class="col-12 d-flex justify-content-between align-items-center ">
+                                                    <div>
+                                                        <label
+                                                            class="home__titulo_formulario_secundario mx-2">Celular</label>
+                                                        <input type="checkbox" class="home__checkbox">
+                                                    </div>
+                                                    <div class="">
+                                                        <label
+                                                            class="home__titulo_formulario_secundario mx-2">Email</label>
+                                                        <input type="checkbox" class="home__checkbox fs-6">
+                                                    </div>
+                                                    <button class="home__btn home__btn_cel">Enviar</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -258,67 +232,72 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Contenido formulario -->
-                        <div class="home__separador__formulario">
-                            <!-- FOrmulario -->
-                            <div
-                                class=" col-sm-6 d-none d-xl-block bg-white rounded-3 p-5 home__formulario__ubicacion shadow-lg">
+                     
+
+                    </div>
+
+                       <!-- Contenido formulario -->
+
+                       <div class="home__separador__formulario prueba">
+                      
+
+                        <div class=" col-sm-6 d-none d-xl-block bg-white rounded-3 p-2 p-xxl-5 home__formulario__ubicacion shadow-lg prueba">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="fw-bold fs-5 lh-1 home__titulo_formulario">¿Te interesa este
+                                        proyecto?
+                                    </p>
+                                </div>
+                            </div>
+                            <form>
+
                                 <div class="row">
-                                    <div class="col">
-                                        <p class="fw-bold fs-5 lh-1 home__titulo_formulario">¿Te interesa este
-                                            proyecto?
-                                        </p>
+                                    <div class="col-10 col-xxl-12">
+                                        <input type="text" placeholder="Nombre:" name="nombre" class="home__input"
+                                            autocomplete="off">
                                     </div>
                                 </div>
-                                <form>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <input type="text" placeholder="Nombre:" name="nombre" class="home__input"
-                                                autocomplete="off">
-                                        </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <input type="email" placeholder="Email:" name="email" class="home__input"
+                                            autocomplete="off">
                                     </div>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <input type="email" placeholder="Email:" name="email" class="home__input"
-                                                autocomplete="off">
-                                        </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <input type="number" placeholder="Celular:" name="celular"
+                                            class="home__input" autocomplete="off">
                                     </div>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <input type="number" placeholder="Celular:" name="celular"
-                                                class="home__input" autocomplete="off">
-                                        </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <textarea placeholder="Mensaje:" name="nombre"
+                                            class="home__input"></textarea>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <textarea placeholder="Mensaje:" name="nombre"
-                                                class="home__input"></textarea>
-                                        </div>
+                                </div>
+                                <div class="row mt-0 mt-xxl-4">
+                                    <div class="col-12">
+                                        <p class="home__titulo_formulario_secundario fw-light">¿Donde preferís
+                                            que te contactemos?</p>
                                     </div>
-                                    <div class="row mt-4">
-                                        <div class="col-12">
-                                            <p class="home__titulo_formulario_secundario fw-light">¿Donde preferís
-                                                que te contactemos?</p>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-12 d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <label class="home__titulo_formulario_secundario mx-2">Celular</label>
+                                            <input type="checkbox" class="home__checkbox">
                                         </div>
-                                    </div>
-                                    <div class="row mt-3">
-                                        <div class="col-12 d-flex justify-content-between align-items-center">
-                                            <div>
-                                                <label class="home__titulo_formulario_secundario mx-2">Celular</label>
-                                                <input type="checkbox" class="home__checkbox">
-                                            </div>
-                                            <div>
-                                                <label class="home__titulo_formulario_secundario mx-2">Email</label>
-                                                <input type="checkbox" class="home__checkbox fs-6">
-                                            </div>
-                                            <button class="home__btn">Enviar</button>
+                                        <div>
+                                            <label class="home__titulo_formulario_secundario mx-2">Email</label>
+                                            <input type="checkbox" class="home__checkbox fs-6">
                                         </div>
+                                        <button class="home__btn">Enviar</button>
                                     </div>
-                                </form>
-                            </div>
-
+                                </div>
+                            </form>
                         </div>
-                    </div>
+
+                      </div>
 
                 </div>
             </div>
@@ -523,7 +502,6 @@
             </div>
         </div>
     </section>
-
     <!-- Diferenciales VittaUrbano -->
     <section id="diferencialesVittaUrbano" class=" diferencialesVittaUrbano d-none diferenciales__circulo  pt-1">
         <div class="diferenciales__puntos__nuevos">
@@ -613,57 +591,41 @@
                         </div>
                         <!-- Texto -->
                         <div class="mt-5">
-
                             <div class="d-flex flex-column">
                                 <h1 class="ubicacion__titulo_principal ms-1">General Lagos</h1>
-
                                 <h2 class="text-white fs-3 ms-1 mt-3">A 22km de Rosario</h2>
                             </div>
-
-
                             <div class="col-10 d-flex flex-column mt-5">
 
                                 <p class="text-white ubicacion__parrafo fw-lighter lh-1 pe-3 pe-md-0">Es
-                                    una comuna a
-                                    <strong class="fw-bold">22 km de Rosario</strong>, pegada a la ciudad de Pueblo
-                                    Esther.
-                                    General Lagos registra un crecimiento demográfico de un 30% en los últimos años,
+                                    una comuna a <strong class="fw-bold">22 km de Rosario</strong>, pegada a la ciudad de Pueblo
+                                    Esther. General Lagos registra un crecimiento demográfico de un 30% en los últimos años,
                                     considerada en proceso de conurbanización.
                                 </p>
 
                                 <p class="text-white ubicacion__parrafo  fw-light lh-1 pe-3 pe-md-0">Los
-                                    amaneceres y
-                                    los atardeceres ofrecen un escenario auditivo
+                                    amaneceres y los atardeceres ofrecen un escenario auditivo
                                     de trinos que se disfruta tanto <strong class="fw-bold">para hacer deportes como
-                                        para
-                                        cualquier actividad de ocio o recreación.</strong>
+                                    para cualquier actividad de ocio o recreación.</strong>
                                 </p>
                             </div>
                         </div>
                     </div>
-
                     <!-- Mapa -->
                     <div class="col-12 col-lg-6 mt-5 ubicacion__card h-100 p-5 ">
-
                         <div class="ubicacion__borde">
                             <div class="ubicacion__nuevos__puntos">
-                                <div class="ubicacion__nuevos__circulo_mapa_borrar">
-
-                                    <iframe class="ubicacion__mapa p-5"
-                                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d160353.8557912481!2d-60.62920281852336!3d-33.04393669694055!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa23169217f717ab3!2sVitta%20Barrio%20Privado!5e0!3m2!1ses-419!2sar!4v1638123635496!5m2!1ses-419!2sar"
-                                        allowfullscreen="" loading="lazy"></iframe>
-
-
-
+                                <div class="ubicacion__nuevos__circulo_mapa ">
+                                    <div>
+                                     <iframe class="ubicacion__mapa p-5"
+                                          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d160353.8557912481!2d-60.62920281852336!3d-33.04393669694055!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa23169217f717ab3!2sVitta%20Barrio%20Privado!5e0!3m2!1ses-419!2sar!4v1638123635496!5m2!1ses-419!2sar"
+                                        allowfullscreen="" loading="lazy"></iframe>                     
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
-
                 </div>
-
             </div>
         </div>
     </section>
@@ -675,12 +637,8 @@
 
 
             <div class="servicio__puntos">
-
-
-
                 <div class="container">
                     <div class="row">
-
                         <div class="col h-100">
                             <h1 class="ubicacion__titulo">Servicios</h1>
                             <p class="ubicacion__subtitulo">en todos los barrios</p>
@@ -688,9 +646,7 @@
                     </div>
 
                     <div class="row servicio__contenido__card h-100">
-
                         <div class="col mt-5">
-
                             <div
                                 class="flex-wrap d-flex justify-content-between align-items-center align-content-center h-100">
 
@@ -698,10 +654,11 @@
                                     <div class="card servicios__card" style="max-width: 540px;">
                                         <div class="row">
                                             <div class="col-md-4">
+
                                                 <svg class="servicio__svg" viewBox="0 0 72 91" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <g clip-path="url(#clip0_54_139)">
-                                                        <path
+                                                        <path 
                                                             d="M31.1947 91C29.4653 90.7133 27.7 90.5545 26.0111 90.1184C12.806 86.7107 4.29239 78.4543 0.995887 65.3399C-1.42155 55.7304 0.644737 46.7844 6.28224 38.5778C14.7672 26.2289 23.135 13.8017 31.5698 1.41951C31.94 0.876823 32.5086 0.469219 32.9839 0C33.3423 0 33.7006 0 34.0589 0C34.5319 0.514245 35.0765 0.978724 35.4659 1.54984C40.0667 8.28716 44.6435 15.0411 49.2276 21.7902C49.39 22.0296 49.562 22.2595 49.7866 22.5723C51.1267 20.6053 52.4262 18.6977 53.7257 16.79C53.9765 16.4227 54.2154 16.0459 54.4757 15.6857C55.393 14.4131 56.7785 14.4368 57.6958 15.7733C59.4921 18.3896 61.2646 21.0224 63.049 23.6505C65.1153 26.6933 67.1816 29.7385 69.2479 32.7813C73.5262 39.085 72.7618 47.365 67.3584 52.735C66.7898 53.299 66.625 53.8251 66.6824 54.5905C67.6426 67.3945 62.8508 77.5988 52.3975 85.1134C47.6677 88.5141 42.281 90.3507 36.4477 90.8507C36.247 90.8673 36.0535 90.9479 35.8552 90.9976C34.3002 91 32.7474 91 31.1947 91ZM63.2067 55.8133C62.7767 55.9863 62.4757 56.1072 62.1771 56.2304C55.6295 58.9343 48.1694 57.0575 43.6641 51.569C39.2592 46.2038 38.932 38.5494 42.8615 32.7837C44.2828 30.7007 45.6803 28.601 47.1302 26.5369C47.5101 25.9942 47.5196 25.6198 47.1374 25.0605C42.7492 18.6432 38.3921 12.2068 34.0231 5.77518C33.8606 5.53583 33.6791 5.30596 33.4689 5.02396C33.2371 5.34625 33.046 5.60219 32.8645 5.8676C25.0126 17.4274 17.2133 29.0252 9.28732 40.5329C4.55755 47.3958 2.7588 54.8322 4.12996 63.027C6.68833 78.3098 21.6277 89.3554 37.15 87.1823C48.8549 85.5424 56.9433 79.0563 61.3793 68.1908C62.9774 64.2735 63.4838 60.1453 63.2067 55.8133ZM56.0881 19.783C55.952 19.9371 55.8851 19.9963 55.8349 20.0674C52.4142 25.0961 48.9624 30.1082 45.5871 35.1677C44.0153 37.5209 43.4754 40.1846 43.7812 42.9785C44.3402 48.0546 48.0619 52.2681 52.9947 53.5028C58.0087 54.7564 63.2019 52.8464 66.164 48.6542C69.1237 44.4715 69.1547 39.0068 66.2452 34.7269C64.511 32.1747 62.7767 29.62 61.0425 27.0678C59.4109 24.6672 57.777 22.2666 56.0881 19.783Z"
                                                             fill="#D3D92E" />
                                                         <path
@@ -722,7 +679,7 @@
                                                             <rect width="72" height="91" fill="white" />
                                                         </clipPath>
                                                     </defs>
-                                                </svg>
+                                                </svg>                                               
 
                                             </div>
 
